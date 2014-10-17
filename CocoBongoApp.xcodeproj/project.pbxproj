@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBF185EC19F1D3C7007A9DC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF185EB19F1D3C7007A9DC5 /* main.m */; };
+		FBF185EF19F1D3C7007A9DC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF185EE19F1D3C7007A9DC5 /* AppDelegate.m */; };
+		FBF185F219F1D3C7007A9DC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF185F119F1D3C7007A9DC5 /* ViewController.m */; };
+		FBF185F519F1D3C7007A9DC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF185F319F1D3C7007A9DC5 /* Main.storyboard */; };
+		FBF185F719F1D3C7007A9DC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF185F619F1D3C7007A9DC5 /* Images.xcassets */; };
+		FBF185FA19F1D3C7007A9DC5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF185F819F1D3C7007A9DC5 /* LaunchScreen.xib */; };
+		FBF1860619F1D3C8007A9DC5 /* CocoBongoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF1860519F1D3C8007A9DC5 /* CocoBongoAppTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBF1860019F1D3C8007A9DC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBF185DE19F1D3C7007A9DC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBF185E519F1D3C7007A9DC5;
+			remoteInfo = CocoBongoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBF185E619F1D3C7007A9DC5 /* CocoBongoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoBongoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF185EA19F1D3C7007A9DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF185EB19F1D3C7007A9DC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBF185ED19F1D3C7007A9DC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBF185EE19F1D3C7007A9DC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBF185F019F1D3C7007A9DC5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FBF185F119F1D3C7007A9DC5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FBF185F419F1D3C7007A9DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBF185F619F1D3C7007A9DC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FBF185F919F1D3C7007A9DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FBF185FF19F1D3C8007A9DC5 /* CocoBongoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoBongoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBF1860419F1D3C8007A9DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF1860519F1D3C8007A9DC5 /* CocoBongoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoBongoAppTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBF185E319F1D3C7007A9DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF185FC19F1D3C8007A9DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBF185DD19F1D3C7007A9DC5 = {
+			isa = PBXGroup;
+			children = (
+				FBF185E819F1D3C7007A9DC5 /* CocoBongoApp */,
+				FBF1860219F1D3C8007A9DC5 /* CocoBongoAppTests */,
+				FBF185E719F1D3C7007A9DC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBF185E719F1D3C7007A9DC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBF185E619F1D3C7007A9DC5 /* CocoBongoApp.app */,
+				FBF185FF19F1D3C8007A9DC5 /* CocoBongoAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBF185E819F1D3C7007A9DC5 /* CocoBongoApp */ = {
+			isa = PBXGroup;
+			children = (
+				FBF185ED19F1D3C7007A9DC5 /* AppDelegate.h */,
+				FBF185EE19F1D3C7007A9DC5 /* AppDelegate.m */,
+				FBF185F019F1D3C7007A9DC5 /* ViewController.h */,
+				FBF185F119F1D3C7007A9DC5 /* ViewController.m */,
+				FBF185F319F1D3C7007A9DC5 /* Main.storyboard */,
+				FBF185F619F1D3C7007A9DC5 /* Images.xcassets */,
+				FBF185F819F1D3C7007A9DC5 /* LaunchScreen.xib */,
+				FBF185E919F1D3C7007A9DC5 /* Supporting Files */,
+			);
+			path = CocoBongoApp;
+			sourceTree = "<group>";
+		};
+		FBF185E919F1D3C7007A9DC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBF185EA19F1D3C7007A9DC5 /* Info.plist */,
+				FBF185EB19F1D3C7007A9DC5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBF1860219F1D3C8007A9DC5 /* CocoBongoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBF1860519F1D3C8007A9DC5 /* CocoBongoAppTests.m */,
+				FBF1860319F1D3C8007A9DC5 /* Supporting Files */,
+			);
+			path = CocoBongoAppTests;
+			sourceTree = "<group>";
+		};
+		FBF1860319F1D3C8007A9DC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBF1860419F1D3C8007A9DC5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBF185E519F1D3C7007A9DC5 /* CocoBongoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF1860919F1D3C8007A9DC5 /* Build configuration list for PBXNativeTarget "CocoBongoApp" */;
+			buildPhases = (
+				FBF185E219F1D3C7007A9DC5 /* Sources */,
+				FBF185E319F1D3C7007A9DC5 /* Frameworks */,
+				FBF185E419F1D3C7007A9DC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoBongoApp;
+			productName = CocoBongoApp;
+			productReference = FBF185E619F1D3C7007A9DC5 /* CocoBongoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBF185FE19F1D3C8007A9DC5 /* CocoBongoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBF1860C19F1D3C8007A9DC5 /* Build configuration list for PBXNativeTarget "CocoBongoAppTests" */;
+			buildPhases = (
+				FBF185FB19F1D3C8007A9DC5 /* Sources */,
+				FBF185FC19F1D3C8007A9DC5 /* Frameworks */,
+				FBF185FD19F1D3C8007A9DC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBF1860119F1D3C8007A9DC5 /* PBXTargetDependency */,
+			);
+			name = CocoBongoAppTests;
+			productName = CocoBongoAppTests;
+			productReference = FBF185FF19F1D3C8007A9DC5 /* CocoBongoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBF185DE19F1D3C7007A9DC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Alberto Enriquez";
+				TargetAttributes = {
+					FBF185E519F1D3C7007A9DC5 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					FBF185FE19F1D3C8007A9DC5 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = FBF185E519F1D3C7007A9DC5;
+					};
+				};
+			};
+			buildConfigurationList = FBF185E119F1D3C7007A9DC5 /* Build configuration list for PBXProject "CocoBongoApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBF185DD19F1D3C7007A9DC5;
+			productRefGroup = FBF185E719F1D3C7007A9DC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBF185E519F1D3C7007A9DC5 /* CocoBongoApp */,
+				FBF185FE19F1D3C8007A9DC5 /* CocoBongoAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBF185E419F1D3C7007A9DC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF185F519F1D3C7007A9DC5 /* Main.storyboard in Resources */,
+				FBF185FA19F1D3C7007A9DC5 /* LaunchScreen.xib in Resources */,
+				FBF185F719F1D3C7007A9DC5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF185FD19F1D3C8007A9DC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBF185E219F1D3C7007A9DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF185F219F1D3C7007A9DC5 /* ViewController.m in Sources */,
+				FBF185EF19F1D3C7007A9DC5 /* AppDelegate.m in Sources */,
+				FBF185EC19F1D3C7007A9DC5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBF185FB19F1D3C8007A9DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBF1860619F1D3C8007A9DC5 /* CocoBongoAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBF1860119F1D3C8007A9DC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBF185E519F1D3C7007A9DC5 /* CocoBongoApp */;
+			targetProxy = FBF1860019F1D3C8007A9DC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBF185F319F1D3C7007A9DC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBF185F419F1D3C7007A9DC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBF185F819F1D3C7007A9DC5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBF185F919F1D3C7007A9DC5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBF1860719F1D3C8007A9DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FBF1860819F1D3C8007A9DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBF1860A19F1D3C8007A9DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CocoBongoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBF1860B19F1D3C8007A9DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CocoBongoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FBF1860D19F1D3C8007A9DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CocoBongoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoBongoApp.app/CocoBongoApp";
+			};
+			name = Debug;
+		};
+		FBF1860E19F1D3C8007A9DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CocoBongoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoBongoApp.app/CocoBongoApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBF185E119F1D3C7007A9DC5 /* Build configuration list for PBXProject "CocoBongoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF1860719F1D3C8007A9DC5 /* Debug */,
+				FBF1860819F1D3C8007A9DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBF1860919F1D3C8007A9DC5 /* Build configuration list for PBXNativeTarget "CocoBongoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF1860A19F1D3C8007A9DC5 /* Debug */,
+				FBF1860B19F1D3C8007A9DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBF1860C19F1D3C8007A9DC5 /* Build configuration list for PBXNativeTarget "CocoBongoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBF1860D19F1D3C8007A9DC5 /* Debug */,
+				FBF1860E19F1D3C8007A9DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBF185DE19F1D3C7007A9DC5 /* Project object */;
+}
