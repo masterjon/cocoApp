@@ -14,6 +14,7 @@
 		FBF185F719F1D3C7007A9DC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF185F619F1D3C7007A9DC5 /* Images.xcassets */; };
 		FBF185FA19F1D3C7007A9DC5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF185F819F1D3C7007A9DC5 /* LaunchScreen.xib */; };
 		FBF1860619F1D3C8007A9DC5 /* CocoBongoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF1860519F1D3C8007A9DC5 /* CocoBongoAppTests.m */; };
+		FBFD054419F5DCB30066AF25 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD054319F5DCB30066AF25 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		FBF185FF19F1D3C8007A9DC5 /* CocoBongoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoBongoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF1860419F1D3C8007A9DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBF1860519F1D3C8007A9DC5 /* CocoBongoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoBongoAppTests.m; sourceTree = "<group>"; };
+		FBFD054219F5DCB30066AF25 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		FBFD054319F5DCB30066AF25 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				FBF185F019F1D3C7007A9DC5 /* ViewController.h */,
 				FBF185F119F1D3C7007A9DC5 /* ViewController.m */,
 				FBF185F319F1D3C7007A9DC5 /* Main.storyboard */,
+				FBFD054219F5DCB30066AF25 /* WebViewController.h */,
+				FBFD054319F5DCB30066AF25 /* WebViewController.m */,
 				FBF185F619F1D3C7007A9DC5 /* Images.xcassets */,
 				FBF185F819F1D3C7007A9DC5 /* LaunchScreen.xib */,
 				FBF185E919F1D3C7007A9DC5 /* Supporting Files */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBFD054419F5DCB30066AF25 /* WebViewController.m in Sources */,
 				FBF185F219F1D3C7007A9DC5 /* ViewController.m in Sources */,
 				FBF185EF19F1D3C7007A9DC5 /* AppDelegate.m in Sources */,
 				FBF185EC19F1D3C7007A9DC5 /* main.m in Sources */,
@@ -412,6 +418,7 @@
 				FBF1860B19F1D3C8007A9DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FBF1860C19F1D3C8007A9DC5 /* Build configuration list for PBXNativeTarget "CocoBongoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				FBF1860E19F1D3C8007A9DC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
