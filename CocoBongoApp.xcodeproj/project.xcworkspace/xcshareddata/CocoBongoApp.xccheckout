@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9F1D5C7C-22E6-4BCA-94AC-F7AE58C69BEE</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CocoBongoApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9CD86BE3411D848EF3AF176867D99E17977D9E61</key>
+		<string>https://github.com/masterjon/cocoApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CocoBongoApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9CD86BE3411D848EF3AF176867D99E17977D9E61</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/masterjon/cocoApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9CD86BE3411D848EF3AF176867D99E17977D9E61</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9CD86BE3411D848EF3AF176867D99E17977D9E61</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CocoBongoApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>

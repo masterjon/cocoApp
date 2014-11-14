@@ -7,6 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB0D53E51A15704700DD1159 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0D53E41A15704700DD1159 /* MapKit.framework */; };
+		FB0D53E81A15765500DD1159 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0D53E71A15765500DD1159 /* MapViewController.m */; };
+		FB145C771A0D39BC0033C394 /* EcardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB145C761A0D39BC0033C394 /* EcardsViewController.m */; };
+		FB145C7A1A0D50230033C394 /* LangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB145C791A0D50230033C394 /* LangViewController.m */; };
+		FB145C7D1A0D73C00033C394 /* WallpaperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB145C7C1A0D73C00033C394 /* WallpaperViewController.m */; };
+		FB482C361A045BC000EF246F /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB482C351A045BC000EF246F /* MediaViewController.m */; };
+		FB607D671A017F630076FEB2 /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607D661A017F630076FEB2 /* ShowViewController.m */; };
+		FB7B520A19FF0C2B0013299A /* ShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7B520919FF0C2B0013299A /* ShowsViewController.m */; };
+		FB84DED51A15324400BE2149 /* heigh_ho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB84DED41A15324400BE2149 /* heigh_ho.mp3 */; };
+		FB84DED91A15325700BE2149 /* leon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB84DED81A15325700BE2149 /* leon.mp3 */; };
+		FB84DEDB1A15325E00BE2149 /* martillazo.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB84DEDA1A15325E00BE2149 /* martillazo.mp3 */; };
+		FB84DEDD1A15326500BE2149 /* oh_yeah.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB84DEDC1A15326500BE2149 /* oh_yeah.mp3 */; };
+		FB84DEDF1A15326C00BE2149 /* pajaritos.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB84DEDE1A15326C00BE2149 /* pajaritos.mp3 */; };
+		FB84DEE11A15327300BE2149 /* party_people.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB84DEE01A15327300BE2149 /* party_people.mp3 */; };
+		FB84DEE31A15327A00BE2149 /* piano_estadio_1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB84DEE21A15327A00BE2149 /* piano_estadio_1.mp3 */; };
+		FB84DEE51A15328000BE2149 /* piano_estadio_2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB84DEE41A15328000BE2149 /* piano_estadio_2.mp3 */; };
+		FB84DEE71A15328700BE2149 /* piano_estadio_3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB84DEE61A15328700BE2149 /* piano_estadio_3.mp3 */; };
+		FB84DEE91A15328D00BE2149 /* sirena.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB84DEE81A15328D00BE2149 /* sirena.mp3 */; };
+		FB84DEEB1A15389200BE2149 /* just_called.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB84DEEA1A15389200BE2149 /* just_called.mp3 */; };
+		FB9E19A419F83DD600692803 /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9E19A319F83DD600692803 /* TicketsViewController.m */; };
+		FB9E19A719F875F700692803 /* PromosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9E19A619F875F700692803 /* PromosViewController.m */; };
+		FB9E924E1A15277300459DAA /* piano_estadio_4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB9E924D1A15277300459DAA /* piano_estadio_4.mp3 */; };
+		FBA70EA41A07F8790083250C /* WallpapersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA70EA31A07F8790083250C /* WallpapersViewController.m */; };
+		FBB5C8DF1A15138300D9735D /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = FB1728A21A143EF6009F2B60 /* pew-pew-lei.caf */; };
+		FBBBC3911A0C372D00C89DD6 /* SoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBBC3901A0C372D00C89DD6 /* SoundsViewController.m */; };
 		FBF185EC19F1D3C7007A9DC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF185EB19F1D3C7007A9DC5 /* main.m */; };
 		FBF185EF19F1D3C7007A9DC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF185EE19F1D3C7007A9DC5 /* AppDelegate.m */; };
 		FBF185F219F1D3C7007A9DC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF185F119F1D3C7007A9DC5 /* ViewController.m */; };
@@ -28,6 +53,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB0D53E41A15704700DD1159 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FB0D53E61A15765500DD1159 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		FB0D53E71A15765500DD1159 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		FB145C751A0D39BC0033C394 /* EcardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EcardsViewController.h; sourceTree = "<group>"; };
+		FB145C761A0D39BC0033C394 /* EcardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EcardsViewController.m; sourceTree = "<group>"; };
+		FB145C781A0D50230033C394 /* LangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangViewController.h; sourceTree = "<group>"; };
+		FB145C791A0D50230033C394 /* LangViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LangViewController.m; sourceTree = "<group>"; };
+		FB145C7B1A0D73C00033C394 /* WallpaperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpaperViewController.h; sourceTree = "<group>"; };
+		FB145C7C1A0D73C00033C394 /* WallpaperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpaperViewController.m; sourceTree = "<group>"; };
+		FB1728A21A143EF6009F2B60 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		FB482C341A045BC000EF246F /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
+		FB482C351A045BC000EF246F /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
+		FB607D651A017F630076FEB2 /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
+		FB607D661A017F630076FEB2 /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
+		FB7B520819FF0C2B0013299A /* ShowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowsViewController.h; sourceTree = "<group>"; };
+		FB7B520919FF0C2B0013299A /* ShowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowsViewController.m; sourceTree = "<group>"; };
+		FB84DED41A15324400BE2149 /* heigh_ho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heigh_ho.mp3; sourceTree = "<group>"; };
+		FB84DED81A15325700BE2149 /* leon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = leon.mp3; sourceTree = "<group>"; };
+		FB84DEDA1A15325E00BE2149 /* martillazo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = martillazo.mp3; sourceTree = "<group>"; };
+		FB84DEDC1A15326500BE2149 /* oh_yeah.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = oh_yeah.mp3; sourceTree = "<group>"; };
+		FB84DEDE1A15326C00BE2149 /* pajaritos.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = pajaritos.mp3; sourceTree = "<group>"; };
+		FB84DEE01A15327300BE2149 /* party_people.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = party_people.mp3; sourceTree = "<group>"; };
+		FB84DEE21A15327A00BE2149 /* piano_estadio_1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piano_estadio_1.mp3; sourceTree = "<group>"; };
+		FB84DEE41A15328000BE2149 /* piano_estadio_2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piano_estadio_2.mp3; sourceTree = "<group>"; };
+		FB84DEE61A15328700BE2149 /* piano_estadio_3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piano_estadio_3.mp3; sourceTree = "<group>"; };
+		FB84DEE81A15328D00BE2149 /* sirena.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sirena.mp3; sourceTree = "<group>"; };
+		FB84DEEA1A15389200BE2149 /* just_called.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = just_called.mp3; sourceTree = "<group>"; };
+		FB9E19A219F83DD600692803 /* TicketsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketsViewController.h; sourceTree = "<group>"; };
+		FB9E19A319F83DD600692803 /* TicketsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsViewController.m; sourceTree = "<group>"; };
+		FB9E19A519F875F700692803 /* PromosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromosViewController.h; sourceTree = "<group>"; };
+		FB9E19A619F875F700692803 /* PromosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromosViewController.m; sourceTree = "<group>"; };
+		FB9E924D1A15277300459DAA /* piano_estadio_4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piano_estadio_4.mp3; sourceTree = "<group>"; };
+		FBA70EA21A07F8790083250C /* WallpapersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpapersViewController.h; sourceTree = "<group>"; };
+		FBA70EA31A07F8790083250C /* WallpapersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpapersViewController.m; sourceTree = "<group>"; };
+		FBBBC38F1A0C372D00C89DD6 /* SoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundsViewController.h; sourceTree = "<group>"; };
+		FBBBC3901A0C372D00C89DD6 /* SoundsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundsViewController.m; sourceTree = "<group>"; };
 		FBF185E619F1D3C7007A9DC5 /* CocoBongoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoBongoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF185EA19F1D3C7007A9DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBF185EB19F1D3C7007A9DC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0D53E51A15704700DD1159 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,9 +125,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB1728A11A143EC9009F2B60 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				FB84DED41A15324400BE2149 /* heigh_ho.mp3 */,
+				FB84DEEA1A15389200BE2149 /* just_called.mp3 */,
+				FB84DEE01A15327300BE2149 /* party_people.mp3 */,
+				FB84DEE61A15328700BE2149 /* piano_estadio_3.mp3 */,
+				FB84DEDA1A15325E00BE2149 /* martillazo.mp3 */,
+				FB84DEDE1A15326C00BE2149 /* pajaritos.mp3 */,
+				FB84DEE41A15328000BE2149 /* piano_estadio_2.mp3 */,
+				FB84DEE21A15327A00BE2149 /* piano_estadio_1.mp3 */,
+				FB84DEDC1A15326500BE2149 /* oh_yeah.mp3 */,
+				FB84DED81A15325700BE2149 /* leon.mp3 */,
+				FB84DEE81A15328D00BE2149 /* sirena.mp3 */,
+				FB9E924D1A15277300459DAA /* piano_estadio_4.mp3 */,
+				FB1728A21A143EF6009F2B60 /* pew-pew-lei.caf */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		FBF185DD19F1D3C7007A9DC5 = {
 			isa = PBXGroup;
 			children = (
+				FB0D53E41A15704700DD1159 /* MapKit.framework */,
 				FBF185E819F1D3C7007A9DC5 /* CocoBongoApp */,
 				FBF1860219F1D3C8007A9DC5 /* CocoBongoAppTests */,
 				FBF185E719F1D3C7007A9DC5 /* Products */,
@@ -88,12 +171,35 @@
 				FBF185EE19F1D3C7007A9DC5 /* AppDelegate.m */,
 				FBF185F019F1D3C7007A9DC5 /* ViewController.h */,
 				FBF185F119F1D3C7007A9DC5 /* ViewController.m */,
+				FB0D53E61A15765500DD1159 /* MapViewController.h */,
+				FB0D53E71A15765500DD1159 /* MapViewController.m */,
 				FBF185F319F1D3C7007A9DC5 /* Main.storyboard */,
+				FB145C7B1A0D73C00033C394 /* WallpaperViewController.h */,
+				FB145C7C1A0D73C00033C394 /* WallpaperViewController.m */,
+				FB1728A11A143EC9009F2B60 /* Sounds */,
+				FB145C781A0D50230033C394 /* LangViewController.h */,
+				FB145C791A0D50230033C394 /* LangViewController.m */,
+				FB145C751A0D39BC0033C394 /* EcardsViewController.h */,
+				FB145C761A0D39BC0033C394 /* EcardsViewController.m */,
+				FBBBC38F1A0C372D00C89DD6 /* SoundsViewController.h */,
+				FBBBC3901A0C372D00C89DD6 /* SoundsViewController.m */,
 				FBFD054219F5DCB30066AF25 /* WebViewController.h */,
 				FBFD054319F5DCB30066AF25 /* WebViewController.m */,
 				FBF185F619F1D3C7007A9DC5 /* Images.xcassets */,
 				FBF185F819F1D3C7007A9DC5 /* LaunchScreen.xib */,
 				FBF185E919F1D3C7007A9DC5 /* Supporting Files */,
+				FB9E19A219F83DD600692803 /* TicketsViewController.h */,
+				FB9E19A319F83DD600692803 /* TicketsViewController.m */,
+				FB482C341A045BC000EF246F /* MediaViewController.h */,
+				FB482C351A045BC000EF246F /* MediaViewController.m */,
+				FBA70EA21A07F8790083250C /* WallpapersViewController.h */,
+				FBA70EA31A07F8790083250C /* WallpapersViewController.m */,
+				FB9E19A519F875F700692803 /* PromosViewController.h */,
+				FB9E19A619F875F700692803 /* PromosViewController.m */,
+				FB7B520819FF0C2B0013299A /* ShowsViewController.h */,
+				FB7B520919FF0C2B0013299A /* ShowsViewController.m */,
+				FB607D651A017F630076FEB2 /* ShowViewController.h */,
+				FB607D661A017F630076FEB2 /* ShowViewController.m */,
 			);
 			path = CocoBongoApp;
 			sourceTree = "<group>";
@@ -173,6 +279,12 @@
 				TargetAttributes = {
 					FBF185E519F1D3C7007A9DC5 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 76325T78K7;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					FBF185FE19F1D3C8007A9DC5 = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -205,7 +317,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBF185F519F1D3C7007A9DC5 /* Main.storyboard in Resources */,
+				FB84DEDF1A15326C00BE2149 /* pajaritos.mp3 in Resources */,
+				FB84DED51A15324400BE2149 /* heigh_ho.mp3 in Resources */,
+				FB84DEE51A15328000BE2149 /* piano_estadio_2.mp3 in Resources */,
 				FBF185FA19F1D3C7007A9DC5 /* LaunchScreen.xib in Resources */,
+				FB84DED91A15325700BE2149 /* leon.mp3 in Resources */,
+				FB84DEE11A15327300BE2149 /* party_people.mp3 in Resources */,
+				FB84DEEB1A15389200BE2149 /* just_called.mp3 in Resources */,
+				FB84DEDB1A15325E00BE2149 /* martillazo.mp3 in Resources */,
+				FB84DEE71A15328700BE2149 /* piano_estadio_3.mp3 in Resources */,
+				FB84DEE91A15328D00BE2149 /* sirena.mp3 in Resources */,
+				FB84DEDD1A15326500BE2149 /* oh_yeah.mp3 in Resources */,
+				FBB5C8DF1A15138300D9735D /* pew-pew-lei.caf in Resources */,
+				FB84DEE31A15327A00BE2149 /* piano_estadio_1.mp3 in Resources */,
+				FB9E924E1A15277300459DAA /* piano_estadio_4.mp3 in Resources */,
 				FBF185F719F1D3C7007A9DC5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,10 +349,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7B520A19FF0C2B0013299A /* ShowsViewController.m in Sources */,
+				FB9E19A719F875F700692803 /* PromosViewController.m in Sources */,
 				FBFD054419F5DCB30066AF25 /* WebViewController.m in Sources */,
+				FB9E19A419F83DD600692803 /* TicketsViewController.m in Sources */,
+				FB482C361A045BC000EF246F /* MediaViewController.m in Sources */,
+				FBA70EA41A07F8790083250C /* WallpapersViewController.m in Sources */,
 				FBF185F219F1D3C7007A9DC5 /* ViewController.m in Sources */,
 				FBF185EF19F1D3C7007A9DC5 /* AppDelegate.m in Sources */,
 				FBF185EC19F1D3C7007A9DC5 /* main.m in Sources */,
+				FB145C7A1A0D50230033C394 /* LangViewController.m in Sources */,
+				FBBBC3911A0C372D00C89DD6 /* SoundsViewController.m in Sources */,
+				FB145C7D1A0D73C00033C394 /* WallpaperViewController.m in Sources */,
+				FB0D53E81A15765500DD1159 /* MapViewController.m in Sources */,
+				FB145C771A0D39BC0033C394 /* EcardsViewController.m in Sources */,
+				FB607D671A017F630076FEB2 /* ShowViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,9 +485,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CocoBongoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -359,9 +500,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CocoBongoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};

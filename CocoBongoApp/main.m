@@ -1,6 +1,6 @@
-//
+    //
 //  main.m
-//  CocoBongoApp
+//  CocoBongoApp/Users/albertoenriquez/Desktop/CocoBongoApp/CocoBongoApp/main.m
 //
 //  Created by Alberto Enriquez on 17/10/14.
 //  Copyright (c) 2014 Alberto Enriquez. All rights reserved.

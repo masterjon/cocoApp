@@ -25,13 +25,12 @@
                       @{
                           @"title":@"Tickets",
                           @"image":@"tickets_button",
-                          @"target":@"webViewController",
-                          @"url":@"http://www.cocobongo.com.mx/tienda/index.php"
+                          @"target":@"ticketsViewController"
                        },
                       @{
                           @"title":@"Promos",
                           @"image":@"promo_button",
-                          @"target":@"t",
+                          @"target":@"promosViewController",
                        },
                       @{
                           @"title":@"Boutique",
@@ -42,8 +41,7 @@
                       @{
                           @"title":@"Shows",
                           @"image":@"shows_button",
-                          @"target":@"webViewController",
-                          @"url":@"http://www.cocobongo.com.mx/shows"
+                          @"target":@"showsViewController"
                        },
                       @{
                           @"title":@"Season's set",
@@ -52,9 +50,9 @@
                           @"url":@"http://m.mixcloud.com/CocoBongoShow/summer-mix-2014-cocobongostyle/"
                        },
                       @{
-                          @"title":@"Media",@"target":@"t",
+                          @"title":@"Media",
                           @"image":@"media_button",
-                          @"target":@"t"
+                          @"target":@"mediaViewController"
                        },
                       @{
                           @"title":@"Gallery",
@@ -65,17 +63,17 @@
                       @{
                           @"title":@"E-cards",
                           @"image":@"ecards_button",
-                          @"target":@"t"
+                          @"target":@"ecardsViewController"
                        },
                       @{
                           @"title":@"Loction",
                           @"image":@"location_button",
-                          @"target":@"t"
+                          @"target":@"mapViewController"
                        },
                       @{
                           @"title":@"Lang",
                           @"image":@"idioma_button",
-                          @"target":@"t"
+                          @"target":@"langViewController"
                        }
                     ];
     for (NSArray *dataDictionary in menu){
@@ -105,20 +103,28 @@
         NSString *imageItem= [cellDictionary objectForKey:@"image"];
         menuImage.image = [UIImage imageNamed:imageItem];
         label.text = [NSString stringWithFormat:@"%@",labelItem];
-        NSLog(@"%@:%li",labelItem,indexPath.row);
+        //NSLog(@"%@:%li",labelItem,indexPath.row);
     }
     return cell;
 }
 -(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     NSDictionary *menuItemDictionary = [self.menuItems objectAtIndex:indexPath.row];
-    NSLog(@"clicked item2 %@ at index %li",menuItemDictionary[@"title"],indexPath.row);
+    
+#warning cambiar x switch
+   
     if ([menuItemDictionary[@"target"]  isEqual: @"webViewController"]) {
         WebViewController *WebView = [self.storyboard instantiateViewControllerWithIdentifier:menuItemDictionary[@"target"]];
         
         WebView.url = menuItemDictionary[@"url"] ;
         [self.navigationController pushViewController:WebView animated:YES];
     }
-
+    else{
+        ViewController *viewC = [self.storyboard instantiateViewControllerWithIdentifier:menuItemDictionary[@"target"]];
+        [self.navigationController pushViewController:viewC animated:YES];
+    
+    }
+   
+    
 
 }
 
