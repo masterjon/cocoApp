@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShowViewController : UIViewController
+@interface ShowViewController : UIViewController<UIActionSheetDelegate>
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 @property (weak, nonatomic) IBOutlet UIImageView *showImg;
 @property (nonatomic,strong) NSString* showImage;
 @property (nonatomic,strong) NSString* showTitle;

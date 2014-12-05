@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+@interface ViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate, UIActionSheetDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *menuCollectionView;
 @property (strong,nonatomic) NSMutableArray *menuItems;
+
+
 @end
 

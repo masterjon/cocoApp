@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import <AudioToolbox/AudioToolbox.h>
-@interface SoundsViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
+@interface SoundsViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate, UIActionSheetDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *soundsCollection;
 @property (strong,nonatomic) NSMutableArray *soundsItems;
 - (void)playSystemSound;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
+
 @end

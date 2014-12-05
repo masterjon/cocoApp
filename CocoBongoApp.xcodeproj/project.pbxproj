@@ -9,10 +9,14 @@
 /* Begin PBXBuildFile section */
 		FB0D53E51A15704700DD1159 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0D53E41A15704700DD1159 /* MapKit.framework */; };
 		FB0D53E81A15765500DD1159 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0D53E71A15765500DD1159 /* MapViewController.m */; };
+		FB103CED1A2D2B06001EFA9A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB103CEF1A2D2B06001EFA9A /* Localizable.strings */; };
+		FB134BB11A1C0E5300551D2C /* ToolbarMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB134BB01A1C0E5300551D2C /* ToolbarMenuController.m */; };
 		FB145C771A0D39BC0033C394 /* EcardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB145C761A0D39BC0033C394 /* EcardsViewController.m */; };
 		FB145C7A1A0D50230033C394 /* LangViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB145C791A0D50230033C394 /* LangViewController.m */; };
 		FB145C7D1A0D73C00033C394 /* WallpaperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB145C7C1A0D73C00033C394 /* WallpaperViewController.m */; };
 		FB482C361A045BC000EF246F /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB482C351A045BC000EF246F /* MediaViewController.m */; };
+		FB5F437C1A30FA0E003B534B /* ticket-button.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5F437E1A30FA0E003B534B /* ticket-button.png */; };
+		FB5F43821A30FA33003B534B /* ticket-button.png in Resources */ = {isa = PBXBuildFile; fileRef = FB5F43841A30FA33003B534B /* ticket-button.png */; };
 		FB607D671A017F630076FEB2 /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB607D661A017F630076FEB2 /* ShowViewController.m */; };
 		FB7B520A19FF0C2B0013299A /* ShowsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7B520919FF0C2B0013299A /* ShowsViewController.m */; };
 		FB84DED51A15324400BE2149 /* heigh_ho.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB84DED41A15324400BE2149 /* heigh_ho.mp3 */; };
@@ -28,7 +32,9 @@
 		FB84DEEB1A15389200BE2149 /* just_called.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB84DEEA1A15389200BE2149 /* just_called.mp3 */; };
 		FB9E19A419F83DD600692803 /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9E19A319F83DD600692803 /* TicketsViewController.m */; };
 		FB9E19A719F875F700692803 /* PromosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9E19A619F875F700692803 /* PromosViewController.m */; };
+		FB9E73D51A2513B00067B9A4 /* EcardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB9E73D41A2513B00067B9A4 /* EcardViewController.m */; };
 		FB9E924E1A15277300459DAA /* piano_estadio_4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FB9E924D1A15277300459DAA /* piano_estadio_4.mp3 */; };
+		FBA27BC61A2FE0F800CF4E97 /* call_button.png in Resources */ = {isa = PBXBuildFile; fileRef = FBA27BC41A2FE0F800CF4E97 /* call_button.png */; };
 		FBA70EA41A07F8790083250C /* WallpapersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA70EA31A07F8790083250C /* WallpapersViewController.m */; };
 		FBB5C8DF1A15138300D9735D /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = FB1728A21A143EF6009F2B60 /* pew-pew-lei.caf */; };
 		FBBBC3911A0C372D00C89DD6 /* SoundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBBBC3901A0C372D00C89DD6 /* SoundsViewController.m */; };
@@ -39,6 +45,7 @@
 		FBF185F719F1D3C7007A9DC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBF185F619F1D3C7007A9DC5 /* Images.xcassets */; };
 		FBF185FA19F1D3C7007A9DC5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF185F819F1D3C7007A9DC5 /* LaunchScreen.xib */; };
 		FBF1860619F1D3C8007A9DC5 /* CocoBongoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF1860519F1D3C8007A9DC5 /* CocoBongoAppTests.m */; };
+		FBFB30CD1A2A5F6A00917777 /* VirtualTourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFB30CC1A2A5F6A00917777 /* VirtualTourViewController.m */; };
 		FBFD054419F5DCB30066AF25 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFD054319F5DCB30066AF25 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +63,12 @@
 		FB0D53E41A15704700DD1159 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FB0D53E61A15765500DD1159 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		FB0D53E71A15765500DD1159 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		FB103CE61A2CE88A001EFA9A /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		FB103CE81A2D053D001EFA9A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FB103CEE1A2D2B06001EFA9A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FB103CF01A2D2B0B001EFA9A /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		FB134BAF1A1C0E5300551D2C /* ToolbarMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolbarMenuController.h; sourceTree = "<group>"; };
+		FB134BB01A1C0E5300551D2C /* ToolbarMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolbarMenuController.m; sourceTree = "<group>"; };
 		FB145C751A0D39BC0033C394 /* EcardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EcardsViewController.h; sourceTree = "<group>"; };
 		FB145C761A0D39BC0033C394 /* EcardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EcardsViewController.m; sourceTree = "<group>"; };
 		FB145C781A0D50230033C394 /* LangViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LangViewController.h; sourceTree = "<group>"; };
@@ -65,10 +78,16 @@
 		FB1728A21A143EF6009F2B60 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
 		FB482C341A045BC000EF246F /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
 		FB482C351A045BC000EF246F /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
+		FB5F437D1A30FA0E003B534B /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/ticket-button.png"; sourceTree = "<group>"; };
+		FB5F437F1A30FA16003B534B /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "Base.lproj/ticket-button.png"; sourceTree = "<group>"; };
+		FB5F43831A30FA33003B534B /* pt */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pt; path = "pt.lproj/ticket-button.png"; sourceTree = "<group>"; };
 		FB607D651A017F630076FEB2 /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
 		FB607D661A017F630076FEB2 /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
 		FB7B520819FF0C2B0013299A /* ShowsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowsViewController.h; sourceTree = "<group>"; };
 		FB7B520919FF0C2B0013299A /* ShowsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowsViewController.m; sourceTree = "<group>"; };
+		FB7EEC7C1A2E904900DC9B2A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
+		FB7EEC7E1A2E90D900DC9B2A /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
+		FB83DB7D1A2FE28E003AB4C6 /* pt */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pt; path = pt.lproj/call_button.png; sourceTree = "<group>"; };
 		FB84DED41A15324400BE2149 /* heigh_ho.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = heigh_ho.mp3; sourceTree = "<group>"; };
 		FB84DED81A15325700BE2149 /* leon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = leon.mp3; sourceTree = "<group>"; };
 		FB84DEDA1A15325E00BE2149 /* martillazo.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = martillazo.mp3; sourceTree = "<group>"; };
@@ -84,7 +103,12 @@
 		FB9E19A319F83DD600692803 /* TicketsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketsViewController.m; sourceTree = "<group>"; };
 		FB9E19A519F875F700692803 /* PromosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PromosViewController.h; sourceTree = "<group>"; };
 		FB9E19A619F875F700692803 /* PromosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PromosViewController.m; sourceTree = "<group>"; };
+		FB9E73D31A2513B00067B9A4 /* EcardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EcardViewController.h; sourceTree = "<group>"; };
+		FB9E73D41A2513B00067B9A4 /* EcardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EcardViewController.m; sourceTree = "<group>"; };
 		FB9E924D1A15277300459DAA /* piano_estadio_4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = piano_estadio_4.mp3; sourceTree = "<group>"; };
+		FBA27BC51A2FE0F800CF4E97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/call_button.png; sourceTree = "<group>"; };
+		FBA27BC81A2FE12100CF4E97 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/call_button.png; sourceTree = "<group>"; };
+		FBA27BC91A2FE13D00CF4E97 /* es */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = es; path = es.lproj/call_button.png; sourceTree = "<group>"; };
 		FBA70EA21A07F8790083250C /* WallpapersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallpapersViewController.h; sourceTree = "<group>"; };
 		FBA70EA31A07F8790083250C /* WallpapersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WallpapersViewController.m; sourceTree = "<group>"; };
 		FBBBC38F1A0C372D00C89DD6 /* SoundsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundsViewController.h; sourceTree = "<group>"; };
@@ -102,6 +126,11 @@
 		FBF185FF19F1D3C8007A9DC5 /* CocoBongoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoBongoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF1860419F1D3C8007A9DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBF1860519F1D3C8007A9DC5 /* CocoBongoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoBongoAppTests.m; sourceTree = "<group>"; };
+		FBF814A31A2E47660019A324 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FBF814A51A2E47660019A324 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FBF814AB1A2E8B500019A324 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
+		FBFB30CB1A2A5F6A00917777 /* VirtualTourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualTourViewController.h; sourceTree = "<group>"; };
+		FBFB30CC1A2A5F6A00917777 /* VirtualTourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VirtualTourViewController.m; sourceTree = "<group>"; };
 		FBFD054219F5DCB30066AF25 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		FBFD054319F5DCB30066AF25 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +174,16 @@
 			name = Sounds;
 			sourceTree = "<group>";
 		};
+		FBA27BC31A2FE0CE00CF4E97 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FB5F437E1A30FA0E003B534B /* ticket-button.png */,
+				FB5F43841A30FA33003B534B /* ticket-button.png */,
+				FBA27BC41A2FE0F800CF4E97 /* call_button.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		FBF185DD19F1D3C7007A9DC5 = {
 			isa = PBXGroup;
 			children = (
@@ -167,12 +206,15 @@
 		FBF185E819F1D3C7007A9DC5 /* CocoBongoApp */ = {
 			isa = PBXGroup;
 			children = (
+				FBA27BC31A2FE0CE00CF4E97 /* Images */,
 				FBF185ED19F1D3C7007A9DC5 /* AppDelegate.h */,
 				FBF185EE19F1D3C7007A9DC5 /* AppDelegate.m */,
 				FBF185F019F1D3C7007A9DC5 /* ViewController.h */,
 				FBF185F119F1D3C7007A9DC5 /* ViewController.m */,
 				FB0D53E61A15765500DD1159 /* MapViewController.h */,
 				FB0D53E71A15765500DD1159 /* MapViewController.m */,
+				FB134BAF1A1C0E5300551D2C /* ToolbarMenuController.h */,
+				FB134BB01A1C0E5300551D2C /* ToolbarMenuController.m */,
 				FBF185F319F1D3C7007A9DC5 /* Main.storyboard */,
 				FB145C7B1A0D73C00033C394 /* WallpaperViewController.h */,
 				FB145C7C1A0D73C00033C394 /* WallpaperViewController.m */,
@@ -200,6 +242,11 @@
 				FB7B520919FF0C2B0013299A /* ShowsViewController.m */,
 				FB607D651A017F630076FEB2 /* ShowViewController.h */,
 				FB607D661A017F630076FEB2 /* ShowViewController.m */,
+				FB9E73D31A2513B00067B9A4 /* EcardViewController.h */,
+				FB9E73D41A2513B00067B9A4 /* EcardViewController.m */,
+				FBFB30CB1A2A5F6A00917777 /* VirtualTourViewController.h */,
+				FBFB30CC1A2A5F6A00917777 /* VirtualTourViewController.m */,
+				FB103CEF1A2D2B06001EFA9A /* Localizable.strings */,
 			);
 			path = CocoBongoApp;
 			sourceTree = "<group>";
@@ -299,6 +346,9 @@
 			knownRegions = (
 				en,
 				Base,
+				"es-MX",
+				pt,
+				es,
 			);
 			mainGroup = FBF185DD19F1D3C7007A9DC5;
 			productRefGroup = FBF185E719F1D3C7007A9DC5 /* Products */;
@@ -316,12 +366,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB103CED1A2D2B06001EFA9A /* Localizable.strings in Resources */,
+				FB5F43821A30FA33003B534B /* ticket-button.png in Resources */,
 				FBF185F519F1D3C7007A9DC5 /* Main.storyboard in Resources */,
 				FB84DEDF1A15326C00BE2149 /* pajaritos.mp3 in Resources */,
 				FB84DED51A15324400BE2149 /* heigh_ho.mp3 in Resources */,
 				FB84DEE51A15328000BE2149 /* piano_estadio_2.mp3 in Resources */,
 				FBF185FA19F1D3C7007A9DC5 /* LaunchScreen.xib in Resources */,
 				FB84DED91A15325700BE2149 /* leon.mp3 in Resources */,
+				FB5F437C1A30FA0E003B534B /* ticket-button.png in Resources */,
+				FBA27BC61A2FE0F800CF4E97 /* call_button.png in Resources */,
 				FB84DEE11A15327300BE2149 /* party_people.mp3 in Resources */,
 				FB84DEEB1A15389200BE2149 /* just_called.mp3 in Resources */,
 				FB84DEDB1A15325E00BE2149 /* martillazo.mp3 in Resources */,
@@ -349,9 +403,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9E73D51A2513B00067B9A4 /* EcardViewController.m in Sources */,
 				FB7B520A19FF0C2B0013299A /* ShowsViewController.m in Sources */,
 				FB9E19A719F875F700692803 /* PromosViewController.m in Sources */,
 				FBFD054419F5DCB30066AF25 /* WebViewController.m in Sources */,
+				FB134BB11A1C0E5300551D2C /* ToolbarMenuController.m in Sources */,
 				FB9E19A419F83DD600692803 /* TicketsViewController.m in Sources */,
 				FB482C361A045BC000EF246F /* MediaViewController.m in Sources */,
 				FBA70EA41A07F8790083250C /* WallpapersViewController.m in Sources */,
@@ -361,6 +417,7 @@
 				FB145C7A1A0D50230033C394 /* LangViewController.m in Sources */,
 				FBBBC3911A0C372D00C89DD6 /* SoundsViewController.m in Sources */,
 				FB145C7D1A0D73C00033C394 /* WallpaperViewController.m in Sources */,
+				FBFB30CD1A2A5F6A00917777 /* VirtualTourViewController.m in Sources */,
 				FB0D53E81A15765500DD1159 /* MapViewController.m in Sources */,
 				FB145C771A0D39BC0033C394 /* EcardsViewController.m in Sources */,
 				FB607D671A017F630076FEB2 /* ShowViewController.m in Sources */,
@@ -386,10 +443,51 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		FB103CEF1A2D2B06001EFA9A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB103CEE1A2D2B06001EFA9A /* es */,
+				FB103CF01A2D2B0B001EFA9A /* es-MX */,
+				FBF814A31A2E47660019A324 /* pt */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		FB5F437E1A30FA0E003B534B /* ticket-button.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB5F437D1A30FA0E003B534B /* en */,
+				FB5F437F1A30FA16003B534B /* Base */,
+			);
+			name = "ticket-button.png";
+			sourceTree = "<group>";
+		};
+		FB5F43841A30FA33003B534B /* ticket-button.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB5F43831A30FA33003B534B /* pt */,
+			);
+			name = "ticket-button.png";
+			sourceTree = "<group>";
+		};
+		FBA27BC41A2FE0F800CF4E97 /* call_button.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBA27BC51A2FE0F800CF4E97 /* Base */,
+				FBA27BC81A2FE12100CF4E97 /* en */,
+				FBA27BC91A2FE13D00CF4E97 /* es */,
+				FB83DB7D1A2FE28E003AB4C6 /* pt */,
+			);
+			name = call_button.png;
+			sourceTree = "<group>";
+		};
 		FBF185F319F1D3C7007A9DC5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FBF185F419F1D3C7007A9DC5 /* Base */,
+				FBF814AB1A2E8B500019A324 /* es-MX */,
+				FB7EEC7C1A2E904900DC9B2A /* es */,
+				FB7EEC7E1A2E90D900DC9B2A /* pt */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -398,6 +496,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				FBF185F919F1D3C7007A9DC5 /* Base */,
+				FB103CE61A2CE88A001EFA9A /* es-MX */,
+				FB103CE81A2D053D001EFA9A /* es */,
+				FBF814A51A2E47660019A324 /* pt */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -488,7 +589,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CocoBongoApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -503,7 +604,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CocoBongoApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

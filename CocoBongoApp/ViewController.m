@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "WebViewController.h"
-
+#import "ToolbarMenuController.h"
 @interface ViewController ()
 
 @end
@@ -19,59 +19,69 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"grandient_blue"]];
+    self.navigationItem.title = @"Coco Bongo";
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     self.menuItems = [[NSMutableArray alloc] init];
+    [[UINavigationBar appearance] setBarTintColor:[UIColor yellowColor]];
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"textura_roja_big"]forBarMetrics:UIBarMetricsDefault];
     
     NSArray *menu = @[
                       @{
-                          @"title":@"Tickets",
+                          @"title":NSLocalizedString(@"Tickets",nil),
                           @"image":@"tickets_button",
                           @"target":@"ticketsViewController"
                        },
                       @{
-                          @"title":@"Promos",
+                          @"title":NSLocalizedString(@"Promos",nil),
                           @"image":@"promo_button",
                           @"target":@"promosViewController",
                        },
                       @{
-                          @"title":@"Boutique",
+                          @"title":NSLocalizedString(@"Boutique",nil),
                           @"image":@"shop_button",
                           @"target":@"webViewController",
                           @"url":@"http://www.cocobongoboutique.com/store/"
                        },
                       @{
-                          @"title":@"Shows",
+                          @"title":NSLocalizedString(@"Shows",nil),
                           @"image":@"shows_button",
                           @"target":@"showsViewController"
                        },
                       @{
-                          @"title":@"Season's set",
+                          @"title":NSLocalizedString(@"Season's set",nil),
                           @"image":@"set_button",
                           @"target":@"webViewController",
                           @"url":@"http://m.mixcloud.com/CocoBongoShow/summer-mix-2014-cocobongostyle/"
                        },
                       @{
-                          @"title":@"Media",
+                          @"title":NSLocalizedString(@"Media",nil),
                           @"image":@"media_button",
                           @"target":@"mediaViewController"
                        },
                       @{
-                          @"title":@"Gallery",
-                          @"image":@"galeria_button",
-                          @"target":@"webViewController",
-                          @"url":@"http://www.cocobongo.com.mx"
-                       },
+                          @"title":NSLocalizedString(@"Virtual Tour",nil),
+                          @"image":@"tour-virtual",
+                          @"target":@"virtualTourViewController",
+                        },
+                      //  @{
+                      //    @"title":@"Gallery",
+                      //    @"image":@"galeria_button",
+                      //    @"target":@"webViewController",
+                      //    @"url":@"http://www.cocobongo.com.mx"
+                      //  },
                       @{
-                          @"title":@"E-cards",
+                          @"title":NSLocalizedString(@"E-cards",nil),
                           @"image":@"ecards_button",
                           @"target":@"ecardsViewController"
                        },
                       @{
-                          @"title":@"Loction",
+                          @"title":NSLocalizedString(@"Location",nil),
                           @"image":@"location_button",
                           @"target":@"mapViewController"
                        },
                       @{
-                          @"title":@"Lang",
+                          @"title":NSLocalizedString(@"Lang",nil),
                           @"image":@"idioma_button",
                           @"target":@"langViewController"
                        }
@@ -81,7 +91,7 @@
         //NSLog(@"%@",dataDictionary[@"image"]);
     }
     [self.menuCollectionView reloadData];
-
+    //[self createToolbar];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -110,12 +120,12 @@
 -(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     NSDictionary *menuItemDictionary = [self.menuItems objectAtIndex:indexPath.row];
     
-#warning cambiar x switch
    
     if ([menuItemDictionary[@"target"]  isEqual: @"webViewController"]) {
         WebViewController *WebView = [self.storyboard instantiateViewControllerWithIdentifier:menuItemDictionary[@"target"]];
         
         WebView.url = menuItemDictionary[@"url"] ;
+        WebView.viewTitle = menuItemDictionary[@"title"];
         [self.navigationController pushViewController:WebView animated:YES];
     }
     else{
@@ -127,6 +137,17 @@
     
 
 }
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+   
+    
+    if ([segue.identifier isEqualToString:@"ticketsSegue"]) {
+        [segue.destinationViewController setUrl: @"http://www.cocobongo.com.mx/tienda/index.php"];
+    }
+}
+
+
 
 
 @end

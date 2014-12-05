@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WallpaperViewController : UIViewController
+@interface WallpaperViewController : UIViewController<UIActionSheetDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *wpImageView;
 
 @property (nonatomic,strong) NSString* wpTitle;
 @property (nonatomic,strong) NSString* wpImage;
-
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "ShowsViewController.h"
 #import "ShowViewController.h"
+#import "ToolbarMenuController.h"
 
 @interface ShowsViewController ()
 
@@ -18,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"grandient_blue"]];
-
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     self.showsItems = [[NSMutableArray alloc] init];
     NSArray *menu = @[
                       @{
@@ -72,6 +73,7 @@
     for (NSArray *dataDictionary in menu) {
         [self.showsItems addObject: dataDictionary ];
     }
+    [self createToolbar];
     // Do any additional setup after loading the view.
 }
 
@@ -107,15 +109,59 @@
 */
 
 -(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    NSDictionary *showItemDictionary = [self.showsItems objectAtIndex:indexPath.row];
+    //NSDictionary *showItemDictionary = [self.showsItems objectAtIndex:indexPath.row];
    
-    ShowViewController *View = [self.storyboard instantiateViewControllerWithIdentifier:@"showViewController"];
+    //ShowViewController *View = [self.storyboard instantiateViewControllerWithIdentifier:@"showViewController"];
+    //View.showTitle = showItemDictionary[@"title"];
+    //View.showImage = showItemDictionary[@"imageDetail"];
+  
+    //[self.navigationController pushViewController:View animated:YES];
+
+  //  NSLog(@"clicked on %@",indexPath);
+
+}
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    ShowViewController *View = [[ShowViewController alloc] init];
+    View = [ segue destinationViewController];
+    NSArray *arrayOfIndexPaths = [self.showsCollection indexPathsForSelectedItems ];
+    NSIndexPath *path = [arrayOfIndexPaths firstObject];
+    NSDictionary *showItemDictionary = [self.showsItems objectAtIndex:path.row];
     View.showTitle = showItemDictionary[@"title"];
     View.showImage = showItemDictionary[@"imageDetail"];
-   // WebView.url = menuItemDictionary[@"url"] ;
-    [self.navigationController pushViewController:View animated:YES];
 
-    NSLog(@"clicked on %@",indexPath);
-
+}
+- (IBAction)goToMainMenu:(UIButton *)sender {
+    [ ToolbarMenuController goMainMenu:self];
+}
+- (IBAction)openNavMenu:(UIButton *)sender {
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                  initWithTitle:NSLocalizedString(@"Select",nil)
+                                  delegate:self
+                                  cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
+                                  destructiveButtonTitle:nil
+                                  otherButtonTitles:nil
+                                  ];
+    NSArray *menuItems = [[NSArray alloc] init];
+    menuItems = [ToolbarMenuController getMenuItems];
+    for (NSString *title in menuItems) {
+        [actionSheet addButtonWithTitle:title];
+    }
+    [actionSheet showInView:self.view];
+}
+-(void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    [ToolbarMenuController action:buttonIndex atView:self];
+    NSLog(@"%i",buttonIndex);
+}
+-(void) createToolbar{
+    UIImage *homeImg = [UIImage imageNamed:@"home-icon"];
+    UIImage *moreImg = [UIImage imageNamed:@"more-icon"];
+    UIBarButtonItem *goHome = [[UIBarButtonItem alloc] initWithImage:homeImg landscapeImagePhone:homeImg style:UIBarButtonItemStylePlain target:self action:@selector(goToMainMenu:)];
+    
+    UIBarButtonItem *seeMore = [[UIBarButtonItem alloc] initWithImage:moreImg landscapeImagePhone:moreImg style:UIBarButtonItemStylePlain target:self action:@selector(openNavMenu:)];
+    
+    UIBarButtonItem *spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    
+    NSArray *buttonItems = [NSArray arrayWithObjects: goHome, spacer,spacer,spacer, seeMore, nil];
+    [_toolbar setItems:buttonItems];
 }
 @end

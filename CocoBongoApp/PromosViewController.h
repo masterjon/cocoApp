@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PromosViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+@interface PromosViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate, UIActionSheetDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *promosCollection;
 
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 @property (strong,nonatomic) NSMutableArray *promosItems;
 @end

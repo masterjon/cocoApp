@@ -5,56 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Lang View Controller-->
-        <scene sceneID="swG-uH-Fm6">
-            <objects>
-                <viewController storyboardIdentifier="langViewController" id="tFj-Hx-Xjt" customClass="LangViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="sGg-iW-MUH"/>
-                        <viewControllerLayoutGuide type="bottom" id="JVl-IZ-O7E"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="FC3-hY-l8u">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGN-Jb-XLK">
-                                <rect key="frame" x="0.0" y="388" width="320" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="ESPAÑOL" backgroundImage="spanish_lenguage_button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gmX-TQ-nnz">
-                                <rect key="frame" x="0.0" y="448" width="320" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="ENGLISH" backgroundImage="english_lenguage_button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZW-gd-cYF">
-                                <rect key="frame" x="0.0" y="508" width="320" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="PORTUGUÊS" backgroundImage="portugues_lenguage_button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_home" translatesAutoresizingMaskIntoConstraints="NO" id="Ttc-XA-xRL">
-                                <rect key="frame" x="85" y="103" width="150" height="155"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fr0-d3-B5G" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-819" y="-309"/>
-        </scene>
-        <!--Navigation Controller-->
+        <!--Coco Bongo-->
         <scene sceneID="c4Q-O8-itq">
             <objects>
-                <navigationController id="9rb-de-RCp" sceneMemberID="viewController">
+                <navigationController title="Coco Bongo" id="9rb-de-RCp" sceneMemberID="viewController">
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Tx8-bR-Wn6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -66,7 +20,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MDj-Qp-lO1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-405" y="127.99999999999999"/>
+            <point key="canvasLocation" x="-429" y="272"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="5F2-vG-POB">
@@ -94,7 +48,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rjk-OI-3Ht" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="613" y="-591"/>
+            <point key="canvasLocation" x="1223" y="239"/>
         </scene>
         <!--Wallpaper View Controller-->
         <scene sceneID="zXs-H8-L96">
@@ -116,6 +70,8 @@
                                 <items>
                                     <barButtonItem title="Item" id="Oeu-bm-CGb"/>
                                 </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.80295360329999999" green="0.00865265749" blue="0.03479752337" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -128,12 +84,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Cc-up-h68" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="274" y="2229"/>
+            <point key="canvasLocation" x="298" y="2317"/>
         </scene>
-        <!--Promos View Controller-->
+        <!--Promos-->
         <scene sceneID="FQE-Is-v11">
             <objects>
-                <viewController storyboardIdentifier="promosViewController" id="oog-Hk-Vtg" customClass="PromosViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="promosViewController" title="Promos" id="oog-Hk-Vtg" customClass="PromosViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uRN-gt-d1R"/>
                         <viewControllerLayoutGuide type="bottom" id="Tar-fd-Wp8"/>
@@ -143,7 +99,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="svg-tm-r6w">
-                                <rect key="frame" x="11" y="0.0" width="298" height="560"/>
+                                <rect key="frame" x="11" y="0.0" width="298" height="524"/>
                                 <color key="backgroundColor" red="0.00087691326529999996" green="0.00087691326529999996" blue="0.00087691326529999996" alpha="0.26000000000000001" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="uoA-IU-dzy">
                                     <size key="itemSize" width="249" height="318"/>
@@ -179,17 +135,30 @@
                                     <outlet property="delegate" destination="oog-Hk-Vtg" id="7gF-O7-hhO"/>
                                 </connections>
                             </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qTR-lb-1cf">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem title="Item" id="kZA-bI-Nf2"/>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.80295360329999999" green="0.00865265749" blue="0.03479752337" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="oog-Hk-Vtg" id="ngv-nm-s0V"/>
+                                </connections>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="promosCollection" destination="svg-tm-r6w" id="Y6p-SR-6dI"/>
+                        <outlet property="toolbar" destination="qTR-lb-1cf" id="Lgz-lU-8kR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vTl-YD-Lvq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="624" y="128"/>
+            <point key="canvasLocation" x="100" y="-579"/>
         </scene>
         <!--Show View Controller-->
         <scene sceneID="izl-m6-e8u">
@@ -207,22 +176,32 @@
                                 <rect key="frame" x="18" y="116" width="286" height="357"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aR4-9U-ttn">
+                                <rect key="frame" x="1" y="524" width="320" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem title="Item" id="na9-kF-dxd"/>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.80295360329999999" green="0.00865265749" blue="0.03479752337" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="showImg" destination="sGl-JB-QA7" id="c5g-i4-iyb"/>
+                        <outlet property="toolbar" destination="aR4-9U-ttn" id="KxY-jv-8e5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ert-1g-ALn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="994" y="871"/>
+            <point key="canvasLocation" x="1274" y="1231"/>
         </scene>
-        <!--Shows View Controller-->
+        <!--Shows-->
         <scene sceneID="mAV-90-gxk">
             <objects>
-                <viewController storyboardIdentifier="showsViewController" id="JK8-H1-ob8" customClass="ShowsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="showsViewController" title="Shows" id="JK8-H1-ob8" customClass="ShowsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="M65-q0-t1y"/>
                         <viewControllerLayoutGuide type="bottom" id="Q0M-9G-Mgv"/>
@@ -232,7 +211,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NYC-ea-OGG">
-                                <rect key="frame" x="11" y="0.0" width="298" height="560"/>
+                                <rect key="frame" x="11" y="0.0" width="298" height="524"/>
                                 <color key="backgroundColor" red="0.00087691326529999996" green="0.00087691326529999996" blue="0.00087691326529999996" alpha="0.26000000000000001" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="298" id="182-WL-XaG"/>
@@ -264,6 +243,9 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <connections>
+                                            <segue destination="edm-Ir-k4r" kind="show" id="4fP-9Y-IIc"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -271,22 +253,35 @@
                                     <outlet property="delegate" destination="JK8-H1-ob8" id="kgg-iX-EvI"/>
                                 </connections>
                             </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fFa-MZ-RQ5">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem title="Item" id="hTe-hd-4Sl"/>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.80295360329999999" green="0.00865265749" blue="0.03479752337" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="JK8-H1-ob8" id="d6r-zx-rJQ"/>
+                                </connections>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="showsCollection" destination="NYC-ea-OGG" id="Qpx-jG-gKb"/>
+                        <outlet property="toolbar" destination="fFa-MZ-RQ5" id="39a-Lm-N4R"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIU-ZV-gNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="624" y="871"/>
+            <point key="canvasLocation" x="628" y="887"/>
         </scene>
-        <!--Media View Controller-->
+        <!--Media-->
         <scene sceneID="LTD-mx-j5r">
             <objects>
-                <viewController storyboardIdentifier="mediaViewController" id="p0S-Vv-EuB" customClass="MediaViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mediaViewController" title="Media" id="p0S-Vv-EuB" customClass="MediaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Vn-WJ-MQk"/>
                         <viewControllerLayoutGuide type="bottom" id="XAy-A3-DGX"/>
@@ -296,7 +291,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bFJ-dA-ONi">
-                                <rect key="frame" x="11" y="0.0" width="298" height="556"/>
+                                <rect key="frame" x="11" y="0.0" width="298" height="524"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXK-dd-Kqk">
                                         <rect key="frame" x="8" y="129" width="167" height="134"/>
@@ -305,6 +300,7 @@
                                         </state>
                                         <connections>
                                             <action selector="wallpaperButton:" destination="p0S-Vv-EuB" eventType="touchUpInside" id="efg-Yl-8lz"/>
+                                            <segue destination="HaU-kO-kCh" kind="show" id="Jcv-4k-zHQ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="071-ah-eNK">
@@ -314,6 +310,7 @@
                                         </state>
                                         <connections>
                                             <action selector="soundButton:" destination="p0S-Vv-EuB" eventType="touchUpInside" id="jEF-aV-2EU"/>
+                                            <segue destination="nn1-X5-wXl" kind="show" id="Thz-tQ-ghi"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJ9-BC-oPG">
@@ -329,8 +326,8 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wallpapers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="II2-Xc-iv2">
-                                        <rect key="frame" x="183" y="185" width="112" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wallpapers" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="II2-Xc-iv2">
+                                        <rect key="frame" x="183" y="129" width="112" height="134"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -338,19 +335,97 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.26000000000000001" colorSpace="calibratedRGB"/>
                             </view>
+                            <toolbar clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaJ-vg-W8J">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem title="Item" id="EJS-13-AWY"/>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.80295360331632648" green="0.0086526574896912834" blue="0.034797523369503328" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="p0S-Vv-EuB" id="khg-0G-t8e"/>
+                                </connections>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="toolbar" destination="gaJ-vg-W8J" id="Pvf-2U-Por"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mRY-fC-92R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="871"/>
+            <point key="canvasLocation" x="100" y="847"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Virtual Tour-->
+        <scene sceneID="e5Q-Ni-Wpt">
+            <objects>
+                <viewController storyboardIdentifier="virtualTourViewController" title="Virtual Tour" id="f8d-nG-UMN" customClass="VirtualTourViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lvT-GT-RtN"/>
+                        <viewControllerLayoutGuide type="bottom" id="2gm-fu-wBM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TSD-b7-xx2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FdI-Bx-eyr">
+                                <rect key="frame" x="11" y="0.0" width="298" height="524"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYs-Ow-hFC">
+                                        <rect key="frame" x="8" y="304" width="288" height="2"/>
+                                        <color key="backgroundColor" red="0.39024493729999998" green="0.66389992460000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocQ-fY-nPG">
+                                        <rect key="frame" x="50" y="134" width="204" height="79"/>
+                                        <state key="normal" title="Button" image="cancun-button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="5bw-4p-m1b" kind="show" identifier="virtualTourCancun" id="whC-7C-pOb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2I-TR-V0n">
+                                        <rect key="frame" x="41" y="363" width="217" height="84"/>
+                                        <state key="normal" title="Button" image="playa-button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="5bw-4p-m1b" kind="show" identifier="virtualTourPlaya" id="cIg-Du-lf4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.26000000000000001" colorSpace="calibratedRGB"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ejZ-fB-q6h">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="w3y-Om-6KY"/>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.80295360329999999" green="0.00865265749" blue="0.03479752337" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="toolbar" destination="ejZ-fB-q6h" id="h2f-3H-az6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="usp-KO-1xg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628" y="239"/>
+        </scene>
+        <!--Location-->
         <scene sceneID="Md3-bz-QPp">
             <objects>
-                <viewController storyboardIdentifier="mapViewController" id="ifb-P6-dKo" customClass="MapViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapViewController" title="Location" id="ifb-P6-dKo" customClass="MapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KMP-xy-6w3"/>
                         <viewControllerLayoutGuide type="bottom" id="M55-nr-1ig"/>
@@ -370,6 +445,8 @@
                                 <items>
                                     <barButtonItem title="Item" id="ISV-UA-kay"/>
                                 </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.80295360329999999" green="0.00865265749" blue="0.03479752337" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -382,12 +459,52 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LrX-Ys-Hsm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-807" y="575"/>
+            <point key="canvasLocation" x="-871" y="555"/>
         </scene>
-        <!--Ecards View Controller-->
+        <!--Ecard View Controller-->
+        <scene sceneID="M9A-nI-1ZY">
+            <objects>
+                <viewController storyboardIdentifier="ecardViewController" id="JEb-wD-Kdg" customClass="EcardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rLZ-8w-gxo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Z6v-Ng-euY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sxh-CW-5Ms">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bbp-zf-85n">
+                                <rect key="frame" x="11" y="82" width="299" height="404"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z0g-LR-BuT">
+                                <rect key="frame" x="11" y="82" width="299" height="404"/>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rel-hD-mh0">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="Dj8-c7-RhA"/>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.80295360329999999" green="0.00865265749" blue="0.03479752337" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="ecardImg" destination="z0g-LR-BuT" id="Amh-zA-7PL"/>
+                        <outlet property="toolbar" destination="rel-hD-mh0" id="lsE-Mg-MQb"/>
+                        <outlet property="userImg" destination="Bbp-zf-85n" id="FqL-iP-weP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k9Q-na-XN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-619" y="1632"/>
+        </scene>
+        <!--E-cards-->
         <scene sceneID="Aq0-fU-vX4">
             <objects>
-                <viewController storyboardIdentifier="ecardsViewController" id="VTN-mk-aJA" customClass="EcardsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ecardsViewController" title="E-cards" id="VTN-mk-aJA" customClass="EcardsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9r3-cr-cEa"/>
                         <viewControllerLayoutGuide type="bottom" id="clh-rs-Xgs"/>
@@ -397,7 +514,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="91Q-sq-WBb">
-                                <rect key="frame" x="11" y="0.0" width="298" height="560"/>
+                                <rect key="frame" x="11" y="0.0" width="298" height="524"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.26000000000000001" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="i6w-0f-cBh">
                                     <size key="itemSize" width="135" height="184"/>
@@ -425,6 +542,9 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <connections>
+                                            <segue destination="JEb-wD-Kdg" kind="show" id="02Q-df-B83"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -432,22 +552,31 @@
                                     <outlet property="delegate" destination="VTN-mk-aJA" id="r9T-eW-ehR"/>
                                 </connections>
                             </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r4a-rt-xjq">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="UXb-2R-BuS"/>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.80295360329999999" green="0.00865265749" blue="0.03479752337" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="ecardsCollection" destination="91Q-sq-WBb" id="AgE-5L-RhH"/>
+                        <outlet property="toolbar" destination="r4a-rt-xjq" id="vl1-OA-mU1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eX3-KT-U1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-405" y="863"/>
         </scene>
-        <!--Sounds View Controller-->
+        <!--Sounds-->
         <scene sceneID="6rr-WX-m8E">
             <objects>
-                <viewController storyboardIdentifier="soundsViewController" id="nn1-X5-wXl" customClass="SoundsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="soundsViewController" title="Sounds" id="nn1-X5-wXl" customClass="SoundsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BAD-DK-DdE"/>
                         <viewControllerLayoutGuide type="bottom" id="KFQ-Bk-7jX"/>
@@ -457,7 +586,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="H4g-KV-yYW">
-                                <rect key="frame" x="11" y="0.0" width="298" height="560"/>
+                                <rect key="frame" x="11" y="0.0" width="298" height="524"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.26000000000000001" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vl7-bh-GpW">
                                     <size key="itemSize" width="89" height="126"/>
@@ -492,22 +621,34 @@
                                     <outlet property="delegate" destination="nn1-X5-wXl" id="5CS-Mv-Lce"/>
                                 </connections>
                             </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RRk-zc-CVo">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="aZ4-hS-FdU"/>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.80295360329999999" green="0.00865265749" blue="0.03479752337" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="nn1-X5-wXl" id="4Gn-Y4-9X6"/>
+                                </connections>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="soundsCollection" destination="H4g-KV-yYW" id="5J5-Nd-j67"/>
+                        <outlet property="toolbar" destination="RRk-zc-CVo" id="2en-De-XmC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rhh-mJ-a3Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-63" y="1573"/>
+            <point key="canvasLocation" x="-84" y="1567"/>
         </scene>
-        <!--Wallpapers View Controller-->
+        <!--Wallpapers-->
         <scene sceneID="HOZ-co-TWC">
             <objects>
-                <viewController storyboardIdentifier="wallpapersViewController" id="HaU-kO-kCh" customClass="WallpapersViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="wallpapersViewController" title="Wallpapers" id="HaU-kO-kCh" customClass="WallpapersViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9hT-Gu-RvL"/>
                         <viewControllerLayoutGuide type="bottom" id="G9d-4o-Xey"/>
@@ -517,7 +658,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="8gu-4t-VEF">
-                                <rect key="frame" x="11" y="0.0" width="298" height="560"/>
+                                <rect key="frame" x="11" y="0.0" width="298" height="524"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.26000000000000001" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YKY-TH-FqX">
                                     <size key="itemSize" width="89" height="133"/>
@@ -545,6 +686,9 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
+                                        <connections>
+                                            <segue destination="LT9-GG-b7P" kind="show" id="SGq-kj-onK"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
@@ -552,10 +696,23 @@
                                     <outlet property="delegate" destination="HaU-kO-kCh" id="xZz-sE-lmh"/>
                                 </connections>
                             </collectionView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dnh-vl-YQg">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <items>
+                                    <barButtonItem title="Item" id="uCc-it-6eP"/>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.80295360329999999" green="0.00865265749" blue="0.03479752337" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="HaU-kO-kCh" id="cqh-gj-KtD"/>
+                                </connections>
+                            </toolbar>
                         </subviews>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="toolbar" destination="dnh-vl-YQg" id="YVa-DG-veg"/>
                         <outlet property="wallpapersCollection" destination="8gu-4t-VEF" id="5K6-wH-xvi"/>
                     </connections>
                 </viewController>
@@ -563,10 +720,80 @@
             </objects>
             <point key="canvasLocation" x="298" y="1567"/>
         </scene>
-        <!--Tickets View Controller-->
+        <!--Lang-->
+        <scene sceneID="Pf4-gJ-lOW">
+            <objects>
+                <viewController storyboardIdentifier="langViewController" title="Lang" id="Cm3-mK-RCx" customClass="LangViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eDF-lA-Vmu"/>
+                        <viewControllerLayoutGuide type="bottom" id="Spr-oC-M6v"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MCz-5J-rt3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJT-mL-nfw">
+                                <rect key="frame" x="0.0" y="344" width="320" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="SPANISH" backgroundImage="spanish_lenguage_button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="spanish_lenguage_button"/>
+                                <state key="highlighted" backgroundImage="spanish_lenguage_button"/>
+                                <connections>
+                                    <action selector="spanishButton:" destination="Cm3-mK-RCx" eventType="touchUpInside" id="c7e-uV-yHB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvX-Zu-JID">
+                                <rect key="frame" x="0.0" y="404" width="320" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="ENGLISH" backgroundImage="english_lenguage_button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="englishButton:" destination="Cm3-mK-RCx" eventType="touchUpInside" id="Wnl-Ne-zBL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZu-vv-nBT">
+                                <rect key="frame" x="0.0" y="464" width="320" height="60"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="PORTUGUESE" backgroundImage="portugues_lenguage_button">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="portugueseButton:" destination="Cm3-mK-RCx" eventType="touchUpInside" id="KsC-VH-8Z1"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VHI-c8-4O8">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="dAe-f6-wYR"/>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.80295360329999999" green="0.00865265749" blue="0.03479752337" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo_home" translatesAutoresizingMaskIntoConstraints="NO" id="kaM-Mj-Mra">
+                                <rect key="frame" x="85" y="88" width="150" height="155"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="toolbar" destination="VHI-c8-4O8" id="N8W-Ub-L8b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GkY-h8-mUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="901" y="1907"/>
+        </scene>
+        <!--Tickets-->
         <scene sceneID="ei4-yy-akQ">
             <objects>
-                <viewController storyboardIdentifier="ticketsViewController" id="9gx-n3-0KD" customClass="TicketsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ticketsViewController" title="Tickets" id="9gx-n3-0KD" customClass="TicketsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="reg-yE-3UF"/>
                         <viewControllerLayoutGuide type="bottom" id="FEc-ij-LZa"/>
@@ -576,7 +803,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d7D-3H-leG">
-                                <rect key="frame" x="11" y="0.0" width="298" height="556"/>
+                                <rect key="frame" x="11" y="0.0" width="298" height="524"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tg8-ms-N2E">
                                         <rect key="frame" x="8" y="304" width="288" height="2"/>
@@ -585,53 +812,68 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact us for more information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUp-kF-fJf">
-                                        <rect key="frame" x="1" y="343" width="297" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buy Now" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLn-KM-ngR">
+                                        <rect key="frame" x="181" y="137" width="109" height="112"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buy Now" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLn-KM-ngR">
-                                        <rect key="frame" x="181" y="163" width="109" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjj-27-8Uh">
+                                        <rect key="frame" x="8" y="111" width="167" height="164"/>
+                                        <state key="normal" title="Button" image="ticket-button.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ticketButton:" destination="9gx-n3-0KD" eventType="touchUpInside" id="zOh-aZ-o5P"/>
+                                            <segue destination="5bw-4p-m1b" kind="show" identifier="ticketsSegue" id="kYC-e0-Yc2"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact us for more information" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUp-kF-fJf">
+                                        <rect key="frame" x="0.0" y="296" width="296" height="93"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3S-Eo-chi">
-                                        <rect key="frame" x="44" y="397" width="217" height="98"/>
-                                        <state key="normal" title="Button" image="call_button">
+                                        <rect key="frame" x="54" y="414" width="188" height="74"/>
+                                        <state key="normal" title="Button" image="call_button.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="callButton:" destination="9gx-n3-0KD" eventType="touchUpInside" id="kcs-A7-JOu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjj-27-8Uh">
-                                        <rect key="frame" x="8" y="111" width="167" height="164"/>
-                                        <state key="normal" title="Button" image="ticket-button-section-1">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="ticketButton:" destination="9gx-n3-0KD" eventType="touchUpInside" id="zOh-aZ-o5P"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.00087691326529999996" green="0.00087691326529999996" blue="0.00087691326529999996" alpha="0.26000000000000001" colorSpace="calibratedRGB"/>
                             </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dMm-mO-NLB">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="9LH-TU-piB"/>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.80295360329999999" green="0.00865265749" blue="0.03479752337" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9gx-n3-0KD" id="BpE-ZX-eMN"/>
+                                </connections>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="toolbar" destination="dMm-mO-NLB" id="eHG-ma-4G4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NVc-YQ-sLL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="112" y="-591"/>
+            <point key="canvasLocation" x="628" y="-579"/>
         </scene>
-        <!--View Controller-->
+        <!--Coco Bongo-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController storyboardIdentifier="mainMenuViewController" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainMenuViewController" title="Coco Bongo" id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -687,18 +929,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="148"/>
+            <point key="canvasLocation" x="100" y="140"/>
         </scene>
     </scenes>
     <resources>
-        <image name="call_button" width="325" height="149"/>
+        <image name="call_button.png" width="325" height="149"/>
+        <image name="cancun-button" width="325" height="149"/>
         <image name="english_lenguage_button" width="480" height="69"/>
         <image name="logo_home" width="150" height="155"/>
         <image name="media-button-section-1" width="294" height="283"/>
         <image name="media-button-section-2" width="294" height="283"/>
+        <image name="playa-button" width="325" height="149"/>
         <image name="portugues_lenguage_button" width="480" height="67"/>
         <image name="sound-icon" width="106" height="103"/>
         <image name="spanish_lenguage_button" width="480" height="69"/>
-        <image name="ticket-button-section-1" width="294" height="283"/>
+        <image name="ticket-button.png" width="294" height="283"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="whC-7C-pOb"/>
+    </inferredMetricsTieBreakers>
 </document>

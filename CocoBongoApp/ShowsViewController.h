@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShowsViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate>
+@interface ShowsViewController : UIViewController<UICollectionViewDataSource, UICollectionViewDelegate , UIActionSheetDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *showsCollection;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 @property (strong,nonatomic) NSMutableArray *showsItems;
 @end

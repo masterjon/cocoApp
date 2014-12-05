@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WallpapersViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate>
+@interface WallpapersViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate, UIActionSheetDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *wallpapersCollection;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 @property (strong,nonatomic) NSMutableArray *wallpaperItems;
 @end

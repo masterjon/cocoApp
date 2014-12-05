@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MediaViewController : UIViewController
+@interface MediaViewController : UIViewController<UIActionSheetDelegate>
 - (IBAction)wallpaperButton:(id)sender;
 - (IBAction)soundButton:(id)sender;
-
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 
 
 @end

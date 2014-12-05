@@ -1,0 +1,123 @@
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "071-ah-eNK"; */
+"071-ah-eNK.normalTitle" = "Button";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "76F-Uw-bxk"; */
+"76F-Uw-bxk.text" = "Label";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "9LH-TU-piB"; */
+"9LH-TU-piB.title" = "Item";
+
+/* Class = "IBUIViewController"; title = "Bilhetes"; ObjectID = "9gx-n3-0KD"; */
+"9gx-n3-0KD.title" = "Bilhetes";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "CXK-dd-Kqk"; */
+"CXK-dd-Kqk.normalTitle" = "Button";
+
+/* Class = "IBUIViewController"; title = "Lang"; ObjectID = "Cm3-mK-RCx"; */
+"Cm3-mK-RCx.title" = "Língua";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "DQi-0a-1As"; */
+"DQi-0a-1As.text" = "Label";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "Dj8-c7-RhA"; */
+"Dj8-c7-RhA.title" = "Item";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "EJS-13-AWY"; */
+"EJS-13-AWY.title" = "Item";
+
+/* Class = "IBUIButton"; normalTitle = "SPANISH"; ObjectID = "EJT-mL-nfw"; */
+"EJT-mL-nfw.normalTitle" = "SPANISH";
+
+/* Class = "IBUIViewController"; title = "Wallpapers"; ObjectID = "HaU-kO-kCh"; */
+"HaU-kO-kCh.title" = "Wallpapers";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "HjV-Ef-8y8"; */
+"HjV-Ef-8y8.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Wallpapers"; ObjectID = "II2-Xc-iv2"; */
+"II2-Xc-iv2.text" = "Wallpapers";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "ISV-UA-kay"; */
+"ISV-UA-kay.title" = "Item";
+
+/* Class = "IBUIViewController"; title = "Shows"; ObjectID = "JK8-H1-ob8"; */
+"JK8-H1-ob8.title" = "Shows";
+
+/* Class = "IBUILabel"; text = "Ligue para a nossa central de atendimento para obter mais informaçoes"; ObjectID = "KUp-kF-fJf"; */
+"KUp-kF-fJf.text" = "Ligue para a nossa central de atendimento para obter mais informaçoes";
+
+/* Class = "IBUILabel"; text = "Sons"; ObjectID = "Mqn-pW-iEg"; */
+"Mqn-pW-iEg.text" = "Sons";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "Oeu-bm-CGb"; */
+"Oeu-bm-CGb.title" = "Item";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "UXb-2R-BuS"; */
+"UXb-2R-BuS.title" = "Item";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "VIp-Z3-T3C"; */
+"VIp-Z3-T3C.text" = "Label";
+
+/* Class = "IBUIViewController"; title = "E-cards"; ObjectID = "VTN-mk-aJA"; */
+"VTN-mk-aJA.title" = "E-cards";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "a2I-TR-V0n"; */
+"a2I-TR-V0n.normalTitle" = "Button";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "aZ4-hS-FdU"; */
+"aZ4-hS-FdU.title" = "Item";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "bRe-ED-uEw"; */
+"bRe-ED-uEw.text" = "Label";
+
+/* Class = "IBUIViewController"; title = "Tour Virtual"; ObjectID = "f8d-nG-UMN"; */
+"f8d-nG-UMN.title" = "Tour Virtual";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "hTe-hd-4Sl"; */
+"hTe-hd-4Sl.title" = "Item";
+
+/* Class = "IBUIViewController"; title = "Location"; ObjectID = "ifb-P6-dKo"; */
+"ifb-P6-dKo.title" = "Location";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "kZA-bI-Nf2"; */
+"kZA-bI-Nf2.title" = "Item";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "l3S-Eo-chi"; */
+"l3S-Eo-chi.normalTitle" = "Button";
+
+/* Class = "IBUIButton"; normalTitle = "PORTUGUESE"; ObjectID = "mZu-vv-nBT"; */
+"mZu-vv-nBT.normalTitle" = "PORTUGUESE";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "na9-kF-dxd"; */
+"na9-kF-dxd.title" = "Item";
+
+/* Class = "IBUIViewController"; title = "Sons"; ObjectID = "nn1-X5-wXl"; */
+"nn1-X5-wXl.title" = "Sons";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "ocQ-fY-nPG"; */
+"ocQ-fY-nPG.normalTitle" = "Button";
+
+/* Class = "IBUIViewController"; title = "Promoções"; ObjectID = "oog-Hk-Vtg"; */
+"oog-Hk-Vtg.title" = "Promoções";
+
+/* Class = "IBUIViewController"; title = "Media"; ObjectID = "p0S-Vv-EuB"; */
+"p0S-Vv-EuB.title" = "Media";
+
+/* Class = "IBUIButton"; normalTitle = "Button"; ObjectID = "pjj-27-8Uh"; */
+"pjj-27-8Uh.normalTitle" = "Button";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "uCc-it-6eP"; */
+"uCc-it-6eP.title" = "Item";
+
+/* Class = "IBUIBarButtonItem"; title = "Item"; ObjectID = "w3y-Om-6KY"; */
+"w3y-Om-6KY.title" = "Item";
+
+/* Class = "IBUIButton"; normalTitle = "ENGLISH"; ObjectID = "xvX-Zu-JID"; */
+"xvX-Zu-JID.normalTitle" = "ENGLISH";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "y1N-6s-iuM"; */
+"y1N-6s-iuM.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Comprar agora"; ObjectID = "zLn-KM-ngR"; */
+"zLn-KM-ngR.text" = "Comprar agora";

@@ -8,7 +8,7 @@
 
 #import "WallpapersViewController.h"
 #import "WallpaperViewController.h"
-
+#import "ToolbarMenuController.h"
 @interface WallpapersViewController ()
 
 @end
@@ -18,7 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"grandient_blue"]];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+    [self createToolbar];
     self.wallpaperItems = [[NSMutableArray alloc] init ];
+    self.title = NSLocalizedString(@"Wallpapers",nil);
     NSArray *wallpapersMenu =  @[
                                  @{
                                      @"title":@"Wallpaper 1",
@@ -105,18 +108,65 @@
        return [self.wallpaperItems count];
 }
 
+
+
+
+- (IBAction)goToMainMenu:(UIButton *)sender {
+    [ ToolbarMenuController goMainMenu:self];
+}
+
+- (IBAction)openNavMenu:(UIButton *)sender {
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                  initWithTitle:NSLocalizedString(@"Select",nil)
+                                  delegate:self
+                                  cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
+                                  destructiveButtonTitle:nil
+                                  otherButtonTitles:nil
+                                  ];
+    NSArray *menuItems = [[NSArray alloc] init];
+    menuItems = [ToolbarMenuController getMenuItems];
+    for (NSString *title in menuItems) {
+        [actionSheet addButtonWithTitle:title];
+    }
+    [actionSheet showInView:self.view];
+}
+-(void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    [ToolbarMenuController action:buttonIndex atView:self];
+    NSLog(@"%i",buttonIndex);
+}
 -(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-   NSDictionary *cellDictionary = [self.wallpaperItems objectAtIndex:indexPath.row];
-    WallpaperViewController *View = [self.storyboard instantiateViewControllerWithIdentifier:@"wallpaperViewController"];
-    View.wpTitle = cellDictionary[@"title"];
-    View.wpImage = cellDictionary[@"imageDetail"];
-    //View.showTitle = showItemDictionary[@"title"];
-    //View.showImage = showItemDictionary[@"imageDetail"];
+  // NSDictionary *cellDictionary = [self.wallpaperItems objectAtIndex:indexPath.row];
+  //  WallpaperViewController *View = [self.storyboard instantiateViewControllerWithIdentifier:@"wallpaperViewController"];
+  //  View.wpTitle = cellDictionary[@"title"];
+  //  View.wpImage = cellDictionary[@"imageDetail"];
     
-    [self.navigationController pushViewController:View animated:YES];
+  //  [self.navigationController pushViewController:View animated:YES];
 
 }
 
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    WallpaperViewController *View = [[WallpaperViewController alloc] init];
+    View = [ segue destinationViewController];
+    NSArray *arrayOfIndexPaths = [self.wallpapersCollection indexPathsForSelectedItems ];
+    NSIndexPath *path = [arrayOfIndexPaths firstObject];
+    NSDictionary *showItemDictionary = [self.wallpaperItems objectAtIndex:path.row];
+    View.wpTitle = showItemDictionary[@"title"];
+    View.wpImage = showItemDictionary[@"imageDetail"];
+    
+}
+-(void) createToolbar{
+    UIImage *homeImg = [UIImage imageNamed:@"home-icon"];
+    UIImage *moreImg = [UIImage imageNamed:@"more-icon"];
+    UIBarButtonItem *goHome = [[UIBarButtonItem alloc] initWithImage:homeImg landscapeImagePhone:homeImg style:UIBarButtonItemStylePlain target:self action:@selector(goToMainMenu:)];
+    
+    UIBarButtonItem *seeMore = [[UIBarButtonItem alloc] initWithImage:moreImg landscapeImagePhone:moreImg style:UIBarButtonItemStylePlain target:self action:@selector(openNavMenu:)];
+    
+    UIBarButtonItem *spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
+    
+    NSArray *buttonItems = [NSArray arrayWithObjects: goHome, spacer,spacer,spacer, seeMore, nil];
+    [_toolbar setItems:buttonItems];
+}
 /*
 #pragma mark - Navigation
 

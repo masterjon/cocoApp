@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LangViewController : UIViewController
+@interface LangViewController : UIViewController<UIActionSheetDelegate>
+- (IBAction)spanishButton:(id)sender;
+- (IBAction)englishButton:(id)sender;
+- (IBAction)portugueseButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
+
 
 @end

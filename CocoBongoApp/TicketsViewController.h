@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TicketsViewController : UIViewController
+@interface TicketsViewController : UIViewController<UIActionSheetDelegate>
+@property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
 - (IBAction)ticketButton:(id)sender;
 - (IBAction)callButton:(id)sender;
 

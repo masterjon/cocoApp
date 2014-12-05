@@ -7,7 +7,7 @@
 //
 
 #import "WallpaperViewController.h"
-
+#import "ToolbarMenuController.h"
 @interface WallpaperViewController ()
 
 @end
@@ -17,6 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"grandient_blue"]];
+    UILabel *viewTitle = [[UILabel alloc] init];
+    viewTitle.textColor = [UIColor whiteColor];
+    viewTitle.text=self.wpTitle;
+    self.navigationItem.titleView=viewTitle;
+    [viewTitle sizeToFit];
     [self createToolbar];
     NSString *imgURL= self.wpImage;
     UIImage *img = [UIImage imageNamed:imgURL];
@@ -31,8 +36,7 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)goToMainMenu:(UIButton *)sender {
-     WallpaperViewController *View = [self.storyboard instantiateViewControllerWithIdentifier:@"mainMenuViewController"];
-    [self.navigationController pushViewController:View animated:YES];
+    [ ToolbarMenuController goMainMenu:self];
 }
 -(IBAction)downoadToGallery:(UIButton *)sender {
     NSString *imgURL= self.wpImage;
@@ -42,7 +46,7 @@
 }
 
 -(IBAction)shareAction:(UIButton *)sender {
-    NSString *shareText= @"Add some #CocoBongoStyle to your smartphone with these wallpapers! Download the app http://bit.ly/CocoBongoApp";
+    NSString *shareText= NSLocalizedString(@"Add some #CocoBongoStyle to your smartphone with these wallpapers! Download the app http://bit.ly/CocoBongoApp",nil);
     NSString *imgURL= self.wpImage;
     UIImage *img = [UIImage imageNamed:imgURL];
     NSArray *items2Share= @[shareText,img];
@@ -50,16 +54,35 @@
     activityViewC.excludedActivityTypes = @[];
     [self presentViewController:activityViewC animated:YES completion:nil];
 }
-
+- (IBAction)openNavMenu:(UIButton *)sender {
+    UIActionSheet *actionSheet = [[UIActionSheet alloc]
+                                  initWithTitle:NSLocalizedString(@"Select",nil)
+                                  delegate:self
+                                  cancelButtonTitle:NSLocalizedString(@"Cancel",nil)
+                                  destructiveButtonTitle:nil
+                                  otherButtonTitles:nil
+                                  ];
+    NSArray *menuItems = [[NSArray alloc] init];
+    menuItems = [ToolbarMenuController getMenuItems];
+    for (NSString *title in menuItems) {
+        [actionSheet addButtonWithTitle:title];
+    }
+    [actionSheet showInView:self.view];
+    
+}
+-(void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
+    [ToolbarMenuController action:buttonIndex atView:self];
+    NSLog(@"%i",buttonIndex);
+}
 - (void)thisImage:(UIImage *)image hasBeenSavedInPhotoAlbumWithError:(NSError *)error usingContextInfo:(void*)ctxInfo {
     NSString *alertTitle = @"";
     NSString *alertMessage = @"";
     if (error) {
-        alertTitle = @"Error";
-        alertMessage = @"There was an error saving the image";
+        alertTitle = NSLocalizedString(@"Error",nil);
+        alertMessage = NSLocalizedString(@"There was an error saving the image",nil);
     } else {
-        alertTitle = @"Success";
-        alertMessage = @"Image Saved to Gallery";
+        alertTitle = NSLocalizedString(@"Success",nil);
+        alertMessage = NSLocalizedString(@"Image Saved to Gallery",nil);
     }
     UIAlertView *message = [[UIAlertView alloc] initWithTitle:alertTitle message:alertMessage delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [message show];
@@ -67,7 +90,6 @@
 -(void) createToolbar{
     UIImage *homeImg = [UIImage imageNamed:@"home-icon"];
     UIImage *downloadImg = [UIImage imageNamed:@"download-icon"];
-    UIImage *shareImg = [UIImage imageNamed:@"share-icon"];
     UIImage *moreImg = [UIImage imageNamed:@"more-icon"];
     UIBarButtonItem *goHome = [[UIBarButtonItem alloc] initWithImage:homeImg landscapeImagePhone:downloadImg style:UIBarButtonItemStylePlain target:self action:@selector(goToMainMenu:)];
     UIBarButtonItem *downloadItem = [[UIBarButtonItem alloc] initWithImage:downloadImg landscapeImagePhone:downloadImg style:UIBarButtonItemStylePlain target:self action:@selector(downoadToGallery:)];
@@ -75,13 +97,27 @@
                                   initWithBarButtonSystemItem:UIBarButtonSystemItemAction
                                   target:self
                                   action:@selector(shareAction:)];
-    UIBarButtonItem *seeMore = [[UIBarButtonItem alloc] initWithImage:moreImg landscapeImagePhone:downloadImg style:UIBarButtonItemStylePlain target:self action:@selector(goToDifficultyExplanation:)];
+    UIBarButtonItem *seeMore = [[UIBarButtonItem alloc] initWithImage:moreImg landscapeImagePhone:downloadImg style:UIBarButtonItemStylePlain target:self action:@selector(openNavMenu:)];
 
     UIBarButtonItem *spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
     
     NSArray *buttonItems = [NSArray arrayWithObjects: goHome, spacer, downloadItem, spacer,shareItem,spacer, seeMore, nil];
     [_toolbar setItems:buttonItems];
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 #pragma mark - Navigation
 
