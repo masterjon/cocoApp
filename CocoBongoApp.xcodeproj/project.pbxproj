@@ -60,6 +60,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB0484861A40B0700042A2AF /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
 		FB0D53E41A15704700DD1159 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FB0D53E61A15765500DD1159 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		FB0D53E71A15765500DD1159 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
@@ -128,7 +129,6 @@
 		FBF1860519F1D3C8007A9DC5 /* CocoBongoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoBongoAppTests.m; sourceTree = "<group>"; };
 		FBF814A31A2E47660019A324 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FBF814A51A2E47660019A324 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		FBF814AB1A2E8B500019A324 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Main.strings"; sourceTree = "<group>"; };
 		FBFB30CB1A2A5F6A00917777 /* VirtualTourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualTourViewController.h; sourceTree = "<group>"; };
 		FBFB30CC1A2A5F6A00917777 /* VirtualTourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VirtualTourViewController.m; sourceTree = "<group>"; };
 		FBFD054219F5DCB30066AF25 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
@@ -485,9 +485,9 @@
 			isa = PBXVariantGroup;
 			children = (
 				FBF185F419F1D3C7007A9DC5 /* Base */,
-				FBF814AB1A2E8B500019A324 /* es-MX */,
 				FB7EEC7C1A2E904900DC9B2A /* es */,
 				FB7EEC7E1A2E90D900DC9B2A /* pt */,
+				FB0484861A40B0700042A2AF /* es-MX */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
