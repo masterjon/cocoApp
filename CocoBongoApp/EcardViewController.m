@@ -55,12 +55,12 @@
         switch (buttonIndex) {
             case 0:{
                 [self takePhoto];
-                NSLog(@"%@%d",@"button:index:",buttonIndex);
+                //NSLog(@"%@%d",@"button:index:",buttonIndex);
                 break;
             }
             case 1:{
                 [self selectPhoto];
-                NSLog(@"%@%d",@"button:index:",buttonIndex);
+                //NSLog(@"%@%d",@"button:index:",buttonIndex);
 
                 break;
             }

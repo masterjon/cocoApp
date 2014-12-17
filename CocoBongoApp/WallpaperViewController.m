@@ -72,7 +72,7 @@
 }
 -(void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     [ToolbarMenuController action:buttonIndex atView:self];
-    NSLog(@"%i",buttonIndex);
+   // NSLog(@"%i",buttonIndex);
 }
 - (void)thisImage:(UIImage *)image hasBeenSavedInPhotoAlbumWithError:(NSError *)error usingContextInfo:(void*)ctxInfo {
     NSString *alertTitle = @"";

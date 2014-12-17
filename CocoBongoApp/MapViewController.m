@@ -106,7 +106,7 @@
     
     }
 
-    NSLog(@"%i",buttonIndex);
+  //  NSLog(@"%i",buttonIndex);
 }
 
 -(void) createToolbar{

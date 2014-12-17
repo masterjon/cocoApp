@@ -132,7 +132,7 @@
 }
 -(void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     [ToolbarMenuController action:buttonIndex atView:self];
-    NSLog(@"%i",buttonIndex);
+   // NSLog(@"%i",buttonIndex);
 }
 -(void) collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
   // NSDictionary *cellDictionary = [self.wallpaperItems objectAtIndex:indexPath.row];
