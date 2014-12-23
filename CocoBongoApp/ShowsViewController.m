@@ -15,7 +15,9 @@
 @end
 
 @implementation ShowsViewController
-
+//-(BOOL)prefersStatusBarHidden{
+//    return YES;
+//}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"grandient_blue"]];
@@ -150,7 +152,7 @@
 }
 -(void) actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex{
     [ToolbarMenuController action:buttonIndex atView:self];
-    //NSLog(@"%i",buttonIndex);
+    //zNSLog(@"%i",buttonIndex);
 }
 -(void) createToolbar{
     UIImage *homeImg = [UIImage imageNamed:@"home-icon"];

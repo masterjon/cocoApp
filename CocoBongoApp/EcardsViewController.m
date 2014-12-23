@@ -14,7 +14,9 @@
 @end
 
 @implementation EcardsViewController
-
+//-(BOOL)prefersStatusBarHidden{
+//    return YES;
+//}
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"grandient_blue"]];

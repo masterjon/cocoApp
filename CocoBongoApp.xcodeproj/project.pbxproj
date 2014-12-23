@@ -64,8 +64,6 @@
 		FB0D53E41A15704700DD1159 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FB0D53E61A15765500DD1159 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		FB0D53E71A15765500DD1159 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		FB103CE61A2CE88A001EFA9A /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		FB103CE81A2D053D001EFA9A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		FB103CEE1A2D2B06001EFA9A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FB103CF01A2D2B0B001EFA9A /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		FB134BAF1A1C0E5300551D2C /* ToolbarMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolbarMenuController.h; sourceTree = "<group>"; };
@@ -128,7 +126,6 @@
 		FBF1860419F1D3C8007A9DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBF1860519F1D3C8007A9DC5 /* CocoBongoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CocoBongoAppTests.m; sourceTree = "<group>"; };
 		FBF814A31A2E47660019A324 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
-		FBF814A51A2E47660019A324 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		FBFB30CB1A2A5F6A00917777 /* VirtualTourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VirtualTourViewController.h; sourceTree = "<group>"; };
 		FBFB30CC1A2A5F6A00917777 /* VirtualTourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VirtualTourViewController.m; sourceTree = "<group>"; };
 		FBFD054219F5DCB30066AF25 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
@@ -496,9 +493,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				FBF185F919F1D3C7007A9DC5 /* Base */,
-				FB103CE61A2CE88A001EFA9A /* es-MX */,
-				FB103CE81A2D053D001EFA9A /* es */,
-				FBF814A51A2E47660019A324 /* pt */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
