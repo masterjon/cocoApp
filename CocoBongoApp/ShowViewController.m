@@ -65,7 +65,7 @@
     [message show];
 }
 -(IBAction)shareAction:(UIButton *)sender {
-    NSString *shareText= NSLocalizedString(@"Add some #CocoBongoStyle to your smartphone with these wallpapers! Download the app http://bit.ly/CocoBongoApp",nil);
+    NSString *shareText= NSLocalizedString(@"Download the Coco Bongo app and discover the different shows! http://bit.ly/CocoBongoiOS",nil);
     NSString *imgURL= self.showImage;
     UIImage *img = [UIImage imageNamed:imgURL];
     NSArray *items2Share= @[shareText,img];

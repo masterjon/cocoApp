@@ -36,9 +36,6 @@
     [self.mapView addAnnotation:self.coco_puntacana];
     [self createToolbar];
     
-    MKCoordinateRegion initialRegion = MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2DMake(20,-78), 2500000, 2500000);
-    [self.mapView setRegion:[self.mapView regionThatFits:initialRegion] animated:YES];
-
     // Do any additional setup after loading the view.
 }
 

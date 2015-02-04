@@ -145,7 +145,7 @@
 }
 
 -(IBAction)shareAction:(UIButton *)sender {
-    NSString *shareText= NSLocalizedString(@"Download the Coco Bongo app and make your e-card #CocoBongoStyle! http://bit.ly/CocoBongoApp",nil);
+    NSString *shareText= NSLocalizedString(@"Download the Coco Bongo app and make your e-card #CocoBongoStyle! http://bit.ly/CocoBongoiOS",nil);
     UIImage *mergedImage = [self mergeImages];
     NSArray *items2Share= @[shareText,mergedImage];
     UIActivityViewController *activityViewC = [[UIActivityViewController alloc] initWithActivityItems:items2Share applicationActivities:nil];
