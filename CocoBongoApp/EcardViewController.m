@@ -5,7 +5,8 @@
 //  Created by Alberto Enriquez on 25/11/14.
 //  Copyright (c) 2014 Alberto Enriquez. All rights reserved.
 //
-
+#define IDIOM    UI_USER_INTERFACE_IDIOM()
+#define IPAD     UIUserInterfaceIdiomPad
 #import "EcardViewController.h"
 #import "ToolbarMenuController.h"
 @interface EcardViewController ()
@@ -54,12 +55,17 @@
     if(actionSheet.tag == 1100){
         switch (buttonIndex) {
             case 0:{
-                [self takePhoto];
+                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                    [self takePhoto];
+                }];
                 //NSLog(@"%@%d",@"button:index:",buttonIndex);
                 break;
             }
             case 1:{
-                [self selectPhoto];
+                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                   [self selectPhoto];
+                }];
+                
                 //NSLog(@"%@%d",@"button:index:",buttonIndex);
 
                 break;
@@ -150,6 +156,9 @@
     NSArray *items2Share= @[shareText,mergedImage];
     UIActivityViewController *activityViewC = [[UIActivityViewController alloc] initWithActivityItems:items2Share applicationActivities:nil];
     activityViewC.excludedActivityTypes = @[];
+    if ( IDIOM == IPAD ) {
+        activityViewC.popoverPresentationController.barButtonItem = self.shareItem;
+    }
     [self presentViewController:activityViewC animated:YES completion:nil];
 }
 - (IBAction)openNavMenu:(UIButton *)sender {
@@ -176,7 +185,7 @@
     UIImage *moreImg = [UIImage imageNamed:@"more-icon"];
     UIBarButtonItem *goHome = [[UIBarButtonItem alloc] initWithImage:homeImg landscapeImagePhone:homeImg style:UIBarButtonItemStylePlain target:self action:@selector(goToMainMenu:)];
     UIBarButtonItem *downloadItem = [[UIBarButtonItem alloc] initWithImage:downloadImg landscapeImagePhone:downloadImg style:UIBarButtonItemStylePlain target:self action:@selector(downoadToGallery:)];
-    UIBarButtonItem *shareItem = [[UIBarButtonItem alloc]
+    self.shareItem = [[UIBarButtonItem alloc]
                                   initWithBarButtonSystemItem:UIBarButtonSystemItemAction
                                   target:self
                                   action:@selector(shareAction:)];
@@ -185,7 +194,7 @@
     
     UIBarButtonItem *spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
     
-    NSArray *buttonItems = [NSArray arrayWithObjects: goHome, spacer, downloadItem, spacer,shareItem,spacer, seeMore, nil];
+    NSArray *buttonItems = [NSArray arrayWithObjects: goHome, spacer, downloadItem, spacer,self.shareItem,spacer, seeMore, nil];
     [_toolbar setItems:buttonItems];
 }
 

@@ -87,4 +87,5 @@
     NSArray *buttonItems = [NSArray arrayWithObjects: goHome, spacer,spacer,spacer, seeMore, nil];
     [_toolbar setItems:buttonItems];
 }
+
 @end

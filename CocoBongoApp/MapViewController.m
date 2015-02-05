@@ -35,9 +35,11 @@
     self.coco_puntacana.subtitle =NSLocalizedString(@"Downtown Punta Cana Shopping Mall, Barcelo Road, corner el Boulevard, Crossing Coco Loco Bávaro, Punta Cana Dominican Republic",nil);
     [self.mapView addAnnotation:self.coco_puntacana];
     [self createToolbar];
-    
+    MKCoordinateRegion reg = MKCoordinateRegionMakeWithDistance(self.coco_cancun.coordinate, 4000000, 4000000);
+    [self.mapView setRegion: [self.mapView regionThatFits:reg] animated:YES];
     // Do any additional setup after loading the view.
 }
+
 
 
 - (void)didReceiveMemoryWarning {

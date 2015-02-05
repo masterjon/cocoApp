@@ -5,7 +5,8 @@
 //  Created by Alberto Enriquez on 07/11/14.
 //  Copyright (c) 2014 Alberto Enriquez. All rights reserved.
 //
-
+#define IDIOM    UI_USER_INTERFACE_IDIOM()
+#define IPAD     UIUserInterfaceIdiomPad
 #import "WallpaperViewController.h"
 #import "ToolbarMenuController.h"
 @interface WallpaperViewController ()
@@ -52,6 +53,9 @@
     NSArray *items2Share= @[shareText,img];
     UIActivityViewController *activityViewC = [[UIActivityViewController alloc] initWithActivityItems:items2Share applicationActivities:nil];
     activityViewC.excludedActivityTypes = @[];
+    if ( IDIOM == IPAD ) {
+        activityViewC.popoverPresentationController.barButtonItem = self.shareItem;
+    }
     [self presentViewController:activityViewC animated:YES completion:nil];
 }
 - (IBAction)openNavMenu:(UIButton *)sender {
@@ -93,7 +97,7 @@
     UIImage *moreImg = [UIImage imageNamed:@"more-icon"];
     UIBarButtonItem *goHome = [[UIBarButtonItem alloc] initWithImage:homeImg landscapeImagePhone:downloadImg style:UIBarButtonItemStylePlain target:self action:@selector(goToMainMenu:)];
     UIBarButtonItem *downloadItem = [[UIBarButtonItem alloc] initWithImage:downloadImg landscapeImagePhone:downloadImg style:UIBarButtonItemStylePlain target:self action:@selector(downoadToGallery:)];
-    UIBarButtonItem *shareItem = [[UIBarButtonItem alloc]
+    self.shareItem = [[UIBarButtonItem alloc]
                                   initWithBarButtonSystemItem:UIBarButtonSystemItemAction
                                   target:self
                                   action:@selector(shareAction:)];
@@ -101,7 +105,7 @@
 
     UIBarButtonItem *spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:self action:nil];
     
-    NSArray *buttonItems = [NSArray arrayWithObjects: goHome, spacer, downloadItem, spacer,shareItem,spacer, seeMore, nil];
+    NSArray *buttonItems = [NSArray arrayWithObjects: goHome, spacer, downloadItem, spacer,self.shareItem,spacer, seeMore, nil];
     [_toolbar setItems:buttonItems];
 }
 

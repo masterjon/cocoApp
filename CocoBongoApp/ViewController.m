@@ -31,34 +31,34 @@
     NSArray *menu = @[
                       @{
                           @"title":NSLocalizedString(@"Tickets",nil),
-                          @"image":@"tickets_button",
+                          @"image":@"tickets-button",
                           @"target":@"ticketsViewController"
                        },
                       @{
                           @"title":NSLocalizedString(@"Promos",nil),
-                          @"image":@"promo_button",
+                          @"image":@"promo-button",
                           @"target":@"promosViewController",
                        },
                       @{
                           @"title":NSLocalizedString(@"Boutique",nil),
-                          @"image":@"shop_button",
+                          @"image":@"shop-button",
                           @"target":@"webViewController",
                           @"url":@"http://www.cocobongoboutique.com/store/"
                        },
                       @{
                           @"title":NSLocalizedString(@"Shows",nil),
-                          @"image":@"shows_button",
+                          @"image":@"shows-button",
                           @"target":@"showsViewController"
                        },
                       @{
                           @"title":NSLocalizedString(@"Season's set",nil),
-                          @"image":@"set_button",
+                          @"image":@"set-button",
                           @"target":@"webViewController",
                           @"url":@"http://m.mixcloud.com/CocoBongoShow/summer-mix-2014-cocobongostyle/"
                        },
                       @{
                           @"title":NSLocalizedString(@"Media",nil),
-                          @"image":@"media_button",
+                          @"image":@"media-button",
                           @"target":@"mediaViewController"
                        },
                       @{
@@ -74,17 +74,17 @@
                       //  },
                       @{
                           @"title":NSLocalizedString(@"E-cards",nil),
-                          @"image":@"ecards_button",
+                          @"image":@"ecards-button",
                           @"target":@"ecardsViewController"
                        },
                       @{
                           @"title":NSLocalizedString(@"Location",nil),
-                          @"image":@"location_button",
+                          @"image":@"location-button",
                           @"target":@"mapViewController"
                        },
                       @{
                           @"title":NSLocalizedString(@"Lang",nil),
-                          @"image":@"idioma_button",
+                          @"image":@"idioma-button",
                           @"target":@"langViewController"
                        }
                     ];
@@ -149,6 +149,22 @@
     }
 }
 
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    // Adjust cell size for orientation
+    int screenSize = (int) screenBounds.size.width;
+    //Size of cells for ipad
+    if(screenSize == 768 || screenSize == 1024){
+        return CGSizeMake(343.f, 241.f);
+    }
+    
+    //Size of cells for iphones
+    return CGSizeMake(150.f,183.f);
+    
+}
 
 
 

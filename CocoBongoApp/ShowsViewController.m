@@ -166,4 +166,20 @@
     NSArray *buttonItems = [NSArray arrayWithObjects: goHome, spacer,spacer,spacer, seeMore, nil];
     [_toolbar setItems:buttonItems];
 }
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    // Adjust cell size for orientation
+    int screenSize = (int) screenBounds.size.width;
+    //Size of cells for ipad
+    if(screenSize == 768 || screenSize == 1024){
+        return CGSizeMake(227.f, 228.f);
+    }
+    
+    //Size of cells for iphones
+    return CGSizeMake(143.f,144.f);
+    
+}
 @end

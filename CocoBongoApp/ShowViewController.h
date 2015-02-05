@@ -14,4 +14,5 @@
 @property (weak, nonatomic) IBOutlet UIImageView *showImg;
 @property (nonatomic,strong) NSString* showImage;
 @property (nonatomic,strong) NSString* showTitle;
+@property (nonatomic,strong) UIBarButtonItem* shareItem;
 @end

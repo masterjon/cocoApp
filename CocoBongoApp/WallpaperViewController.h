@@ -14,5 +14,5 @@
 @property (nonatomic,strong) NSString* wpTitle;
 @property (nonatomic,strong) NSString* wpImage;
 @property (weak, nonatomic) IBOutlet UIToolbar *toolbar;
-
+@property (nonatomic,strong) UIBarButtonItem* shareItem;
 @end

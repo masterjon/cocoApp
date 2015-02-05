@@ -16,5 +16,5 @@
 @property (weak, nonatomic) IBOutlet UIImageView *userImg;
 @property (weak, nonatomic) IBOutlet UIImage *userImage;
 @property (weak, nonatomic) IBOutlet UIImage *mergedImage;
-
+@property (nonatomic,strong) UIBarButtonItem* shareItem;
 @end
